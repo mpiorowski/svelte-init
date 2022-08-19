@@ -9,12 +9,12 @@
 
   <h2>Usage</h2>
 
-  Import preflight.css in __layout.svelte. This is a basic Tailwind preflight,
-  that clears out the browser css. Much easier to work on it.
+  Import preflight.css in +layout.svelte. This is a basic Tailwind preflight,
+  that clears out the browser css. Much easier to work with it.
 
   <pre>
-  # __layout.svelte
-  import "preflight.css" from "@svelteUi";
+  # +layout.svelte
+  import "preflight.css" from "@mpiorowski/@preflight.css";
 </pre>
 
   Add css config to Your main css file.
