@@ -32,10 +32,10 @@ document.body.style.setProperty()
 npm install @mpiorowski/svelte-init
 ```
 
-In Your `+layout.svelte` add `preflight.css` (copied from [tailwind](https://tailwindcss.com/docs/preflight)). It set's up initial css, so it's much easier to work with it.
+In Your `+layout.svelte` add `@preflight.css` (copied from [tailwind](https://tailwindcss.com/docs/preflight)). It set's up initial css, so it's much easier to work with it.
 
 ```
-import "preflight.css" from "@mpiorowski/svelte-init";
+import "@mpiorowski/svelte-init/@preflight.css";
 ```
 
 In Your `app.css` add basic colors variables. If it doesn't exsits, add it and import it in `+layout.svelte`.

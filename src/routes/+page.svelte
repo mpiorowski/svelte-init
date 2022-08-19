@@ -5,7 +5,7 @@
 <div in:fade style="display: flex; gap: 20px; flex-direction: column;">
   <h1>Instalation</h1>
 
-  <pre>npm install svelte</pre>
+  <pre>npm install @mpiorowski/svelte-init</pre>
 
   <h2>Usage</h2>
 
@@ -14,7 +14,7 @@
 
   <pre>
   # +layout.svelte
-  import "preflight.css" from "@mpiorowski/svelte-init/@preflight.css";
+  import "@mpiorowski/svelte-init/@preflight.css";
 </pre>
 
   Add css config to Your main css file.
