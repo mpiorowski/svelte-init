@@ -11,4 +11,5 @@
   <Checkbox bind:checked={submitting}>Submitting</Checkbox>
   <Button {disabled} {submitting}>Primary button</Button>
   <Button {disabled} {submitting} style="ghost">Ghost button</Button>
+  <Button {disabled} {submitting} style="error">Error button</Button>
 </div>
