@@ -10,7 +10,7 @@
     "skipLibCheck": true,
 
     /* Language and Environment */
-    "moduleResolution": "nodenext",
+    "moduleResolution": "node",
     "module": "esnext",
     "lib": ["esnext", "DOM"],
     "target": "esnext",

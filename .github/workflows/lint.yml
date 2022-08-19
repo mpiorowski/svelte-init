@@ -2,15 +2,9 @@ name: Lint code
 on:
   workflow_call:
 jobs:
-  svelte:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: npm --prefix ./svelte ci
-      - run: npm --prefix ./svelte run lint
-  utils:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - run: npm --prefix ./utils ci
-      - run: npm --prefix ./utils run lint
+      - run: npm ci
+      - run: npm run lint
