@@ -6,6 +6,11 @@
   $: url = $page.url.pathname;
 </script>
 
+<svelte:head>
+  <title>SvelteInit</title>
+  <meta name="description" content="SvelteInit" />
+</svelte:head>
+
 <div class="main">
   <div class="navigation">
     <a href="/" class={url === '/' ? 'active' : ''}>Instalation</a>
