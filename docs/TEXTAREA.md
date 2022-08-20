@@ -9,11 +9,11 @@ import { Textarea } from "@mpiorowski/svelte-init";
 # Usage
 
 ```
-<Textarea label="Textarea label" bind:value={inputValue} />
+<Textarea label="Textarea label" bind:value={textareaValue} />
 ```
 
 ```
-<Textarea label="Textarea label" bind:value={inputValue} error="Field must not be empty" required={true} disabled={false} placeholder="Email"  />
+<Textarea label="Textarea label" bind:value={textareaValue} error="Field must not be empty" required={true} disabled={false} placeholder="Email"  />
 ```
 
 | Prop        | Values  | Default |
