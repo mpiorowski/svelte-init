@@ -1,7 +1,14 @@
 <script lang="ts">
   export let placeholder: string;
   export let value: unknown;
-  export let type: 'text' | 'number' | 'password' | 'email' | 'date' = 'text';
+  export let type:
+    | 'text'
+    | 'number'
+    | 'password'
+    | 'email'
+    | 'datetime-local'
+    | 'date'
+    | 'color' = 'text';
   export let disabled = false;
 
   function typeAction(node: HTMLInputElement) {
