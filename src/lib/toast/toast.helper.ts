@@ -18,7 +18,7 @@ export const notifications = writable<Toast[]>([]);
 export const toast = (
   message: string,
   type: ToastType,
-  timeout = 2000
+  timeout = 3000
 ): void => {
   const id = crypto.randomUUID();
   notifications.update((state) => {
@@ -39,7 +39,7 @@ export const removeToast = (id: string): void => {
 
 export const toastSave = (): void =>
   toast('common.saved', ToastType.SUCCESS, 3000);
-export const toastDelete = (): void =>
-  toast('common.deleted', ToastType.WARNING, 3000);
 export const toastError = (): void =>
   toast('common.error', ToastType.ERROR, 3000);
+export const toastDelete = (): void =>
+  toast('common.deleted', ToastType.WARNING, 3000);
