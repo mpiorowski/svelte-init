@@ -100,8 +100,8 @@ import { Button } '@mpiorowski/svelte-init'
 
 ## Components
 
-- [Button](https://github.com/mpiorowski/svelte-init/tree/main/docs/BUTTON.md)
-- [Input](https://github.com/mpiorowski/svelte-init/tree/main/docs/INPUT.md)
+- [Button](https://github.com/mpiorowski/svelte-init/blob/main/docs/BUTTOM.md)
+- [Input](https://github.com/mpiorowski/svelte-init/blob/main/docs/INPUT.md)
 
 ## Contributing
 
