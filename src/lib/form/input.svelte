@@ -14,8 +14,7 @@
   export let disabled = false;
   export let small = false;
   export let placeholder = '';
-
-  export let maxlength: number | undefined = undefined;
+  export let maxlength: number | undefined;
 
   function typeAction(node: HTMLInputElement) {
     node.type = type;

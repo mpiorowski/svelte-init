@@ -16,11 +16,15 @@ import { Input } from "@mpiorowski/svelte-init";
 <Input label="Input label" name="email" bind:value={inputValue} error="Field must not be empty" type="email" required={true} disabled={false} small={false} placeholder="Email"  />
 ```
 
-| Prop     | Values                  | Default   |
-| -------- | ----------------------- | --------- |
-| type     | `primary`, `error`, `g` | `primary` |
-| loading  | boolean                 | false     |
-| disabled | boolean                 | false     |
-| form     | string                  | ''        |
-
-If `form` prop is set, the button type is changed to `submit`.
+| Prop        | Values                                                         | Default |
+| ----------- | -------------------------------------------------------------- | ------- |
+| value       | unknown                                                        |         |
+| label       | string                                                         |         |
+| name        | string                                                         | ''      |
+| error       | string                                                         | ''      |
+| type        | `text`, `password`, `email`, `datetime-local`, `date`, `color` | `text`  |
+| placeholder | string                                                         | ''      |
+| require     | boolean                                                        | false   |
+| disabled    | boolean                                                        | false   |
+| small       | boolean                                                        | false   |
+| maxlength   | number                                                         |         |
