@@ -39,7 +39,7 @@ In Your `+layout.svelte` add `@preflight.css` (copied from [tailwind](https://ta
 import "@mpiorowski/svelte-init/@preflight.css";
 ```
 
-In Your `app.css` add basic colors variables. If the file doesn't exsits, add it and import it in `+layout.svelte`. (it must imported AFTER @preflight.css, hence the '@' sign to help You when IDE will try to autoformat imports :) )
+In Your `app.css` add basic colors variables. If the file doesn't exsits, add it and import it in `+layout.svelte`. It must imported AFTER @preflight.css, hence the '@' sign to help You when IDE will try to autoformat imports :)
 
 ```
 :root {
