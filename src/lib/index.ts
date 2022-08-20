@@ -2,7 +2,7 @@ export { default as Drawer } from './drawer/drawer.svelte';
 export { default as Dropdown } from './dropdown.svelte';
 export { default as Button } from './form/button.svelte';
 export { default as Checkbox } from './form/checkbox.svelte';
-export { default as Group } from './form/group.svelte';
+export { default as CheckboxGroup } from './form/chexkboxGroup.svelte';
 export { default as Input } from './form/input.svelte';
 // export { default as DropdownBtn } from './dropdown/dropdownBtn.svelte';
 // export { default as Pagination } from './pagination/pagination.svelte';
