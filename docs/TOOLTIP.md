@@ -20,4 +20,4 @@ import { Tooltip } from "@mpiorowski/svelte-init";
 | position | `top`, `right`, `left`, `bottom` | `top`   |
 | move     | number                           | 0       |
 
-`Move` prop is for small adjustments to tooltip position.
+`move` prop is for small adjustments to tooltip position.
