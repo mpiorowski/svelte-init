@@ -12,7 +12,9 @@
 
 ---
 
-## [Demo](https://demo.com/)
+## Demo
+
+[svelte-init.vercel.app](svelte-init.vercel.app)
 
 ## Features
 
@@ -95,6 +97,11 @@ import { Button } '@mpiorowski/svelte-init'
 ```
 <Button>Open</Button>
 ```
+
+## Components
+
+- [Button](https://github.com/mpiorowski/svelte-init/tree/main/docs/BUTTON.md)
+- [Input](https://github.com/mpiorowski/svelte-init/tree/main/docs/INPUT.md)
 
 ## Contributing
 
