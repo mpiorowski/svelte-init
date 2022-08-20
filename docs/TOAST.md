@@ -2,10 +2,18 @@
 
 # Toast
 
-Import `Toast` in Your +layout.svelte
+Import `Toast` and use it in Your **+layout.svelte**.
 
 ```
 import { Toast } from "@mpiorowski/svelte-init";
+<Toast />
+```
+
+Optionaly You can set default messages for predefined functions.
+
+```
+import { Toast } from "@mpiorowski/svelte-init";
+<Toast saveMsg="Data saved" errorMsg="Somethign wne wrong" deleteMsg="Data deleted" />
 ```
 
 # Usage
