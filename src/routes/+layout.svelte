@@ -1,6 +1,6 @@
 <script lang="ts">
   import { page } from '$app/stores';
-  import '../@preflight.css';
+  import '../preflight.css';
   import '../app.css';
   import Config from './config.svelte';
   $: url = $page.url.pathname;

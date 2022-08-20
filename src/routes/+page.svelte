@@ -14,7 +14,7 @@
 
   <pre>
   # +layout.svelte
-  import "@mpiorowski/svelte-init/@preflight.css";
+  import "@mpiorowski/svelte-init/preflight.css";
 </pre>
 
   Add css config to Your main css file.

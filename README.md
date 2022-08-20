@@ -33,13 +33,13 @@ npm install @mpiorowski/svelte-init
 ```
 
 **If You are using [tailwind](https://tailwindcss.com), you can skip this step.**  
-In Your `+layout.svelte` add `@preflight.css` (copied from [tailwind](https://tailwindcss.com/docs/preflight)). It set's up initial css, so it's much easier to work with it.
+In Your `+layout.svelte` add `preflight.css` (copied from [tailwind](https://tailwindcss.com/docs/preflight)). It set's up initial css, so it's much easier to work with it.
 
 ```
-import "@mpiorowski/svelte-init/@preflight.css";
+import "@mpiorowski/svelte-init/preflight.css";
 ```
 
-In Your `app.css` add basic colors variables. If the file doesn't exsits, add it and import it in `+layout.svelte`. It must imported AFTER `@preflight.css`, hence the '@' sign to help You when IDE will try to auto-organize imports :)
+In Your `app.css` add basic colors variables. If the file doesn't exsits, add it and import it in `+layout.svelte`. It must imported AFTER `@mpiorowski/svelte-init/preflight.css`.
 
 ```
 :root {
