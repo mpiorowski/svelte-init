@@ -21,6 +21,6 @@ import { Button } from "@mpiorowski/svelte-init";
 | type     | `primary`, `error`, `ghost` | `primary` |
 | loading  | boolean                     | false     |
 | disabled | boolean                     | false     |
-| form     | string                      | ''        |
+| form     | string                      | ""        |
 
 If `form` prop is set, the button type is changed to `submit`.

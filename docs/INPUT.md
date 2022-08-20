@@ -20,10 +20,10 @@ import { Input } from "@mpiorowski/svelte-init";
 | ----------- | -------------------------------------------------------------- | ------- |
 | value       | unknown                                                        |         |
 | label       | string                                                         |         |
-| name        | string                                                         | ''      |
-| error       | string                                                         | ''      |
+| name        | string                                                         | ""      |
+| error       | string                                                         | ""      |
 | type        | `text`, `password`, `email`, `datetime-local`, `date`, `color` | `text`  |
-| placeholder | string                                                         | ''      |
+| placeholder | string                                                         | ""      |
 | require     | boolean                                                        | false   |
 | disabled    | boolean                                                        | false   |
 | small       | boolean                                                        | false   |
