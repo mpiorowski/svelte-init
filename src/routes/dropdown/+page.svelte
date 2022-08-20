@@ -1,6 +1,6 @@
 <script lang="ts">
   import { fade } from 'svelte/transition';
-  import { Button, Dropdown, Group } from '../../lib';
+  import { Button, Dropdown, CheckboxGroup } from '../../lib';
 
   let position = [
     {
@@ -18,11 +18,11 @@
 
 <div in:fade style="display: flex; gap: 20px; flex-direction: column;">
   <h1>Dropdown</h1>
-  <Group values={position} type="radio" bind:group />
+  <CheckboxGroup values={position} type="radio" bind:group />
 
   <Dropdown position={group}>
     <svelte:fragment slot="button">
-      <Button style="ghost">Dropdown</Button>
+      <Button type="ghost">Dropdown</Button>
     </svelte:fragment>
     <svelte:fragment slot="content">
       <div>

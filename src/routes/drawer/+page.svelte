@@ -19,7 +19,7 @@
       {/each}
     </svelte:fragment>
     <svelte:fragment slot="footer">
-      <Button on:click={() => (isDrawerOpen = false)} style="ghost">
+      <Button on:click={() => (isDrawerOpen = false)} type="ghost">
         Close
       </Button>
       <Button on:click={() => alert('Submitting!')}>Submit</Button>
