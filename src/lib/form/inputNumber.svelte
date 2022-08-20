@@ -12,9 +12,9 @@
   export let min: number | undefined = undefined;
   export let step = 0.01;
 
-  $: if (!!max && !!value && Number(value) > max) {
+  $: if (!!max && !!value && value > max) {
     value = max;
-  } else if (!!min && !!value && Number(value) < min) {
+  } else if (!!min && !!value && value < min) {
     value = min;
   }
 </script>

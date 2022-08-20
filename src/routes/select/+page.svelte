@@ -18,9 +18,21 @@
     bind:value={select}
     {required}
     {disabled}
-    error={withError ? 'This must be filled' : ''}
+    error={withError ? 'Field must not be empty' : ''}
     label="Select"
   >
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </Select>
+  <Select
+    bind:value={select}
+    {required}
+    {disabled}
+    error={withError ? 'Field must not be empty' : ''}
+    label="Select"
+  >
+    <option disabled value="">Choose one ...</option>
     <option value="1">One</option>
     <option value="2">Two</option>
     <option value="3">Three</option>

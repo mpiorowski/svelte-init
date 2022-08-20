@@ -13,7 +13,7 @@ import { Textarea } from "@mpiorowski/svelte-init";
 ```
 
 ```
-<Textarea label="Textarea label" bind:value={textareaValue} error="Field must not be empty" required={true} disabled={false} placeholder="Email"  />
+<Textarea label="Textarea label" bind:value={textareaValue} error="Field must not be empty" required={true} disabled={false} placeholder="Textarea" rows={3}  />
 ```
 
 | Prop        | Values  | Default |

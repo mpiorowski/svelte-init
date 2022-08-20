@@ -22,7 +22,7 @@
     bind:value={input}
     {required}
     {disabled}
-    error={withError ? 'This must be filled' : ''}
+    error={withError ? 'Field must not be empty' : ''}
     label="Input text"
     type="text"
   />
@@ -30,7 +30,7 @@
     bind:value={inputDate}
     {required}
     {disabled}
-    error={withError ? 'This must be filled' : ''}
+    error={withError ? 'Field must not be empty' : ''}
     label="Input date"
     type="date"
   />
@@ -40,7 +40,7 @@
     {required}
     {disabled}
     max={100}
-    error={withError ? 'This must be filled' : ''}
+    error={withError ? 'Field must not be empty' : ''}
     label="Input number"
   />
 
@@ -49,7 +49,7 @@
     bind:value={textarea}
     {required}
     {disabled}
-    error={withError ? 'This must be filled' : ''}
+    error={withError ? 'Field must not be empty' : ''}
     label="Textarea"
     placeholder="Placeholder"
   />
