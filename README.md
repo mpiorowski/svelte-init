@@ -14,7 +14,7 @@
 
 ## Demo
 
-[svelte-init.vercel.app](svelte-init.vercel.app)
+[svelte-init.vercel.app](https://svelte-init.vercel.app)
 
 ## Features
 

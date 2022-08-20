@@ -1,6 +1,7 @@
 <script lang="ts">
   export let value: unknown;
   export let label: string;
+  export let name = '';
   export let error = '';
   export let type:
     | 'text'
@@ -12,7 +13,6 @@
   export let required = false;
   export let disabled = false;
   export let small = false;
-  export let name = '';
   export let placeholder = '';
 
   export let maxlength: number | undefined = undefined;
