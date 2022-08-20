@@ -28,6 +28,19 @@
 document.body.style.setProperty()
 ```
 
+## Components
+
+- [Button](https://github.com/mpiorowski/svelte-init/blob/main/docs/BUTTOM.md)
+- [Input](https://github.com/mpiorowski/svelte-init/blob/main/docs/INPUT.md)
+- [Select](https://github.com/mpiorowski/svelte-init/blob/main/docs/SELECT.md)
+- [Checkbox](https://github.com/mpiorowski/svelte-init/blob/main/docs/CHECKBOX.md)
+- [Toast](https://github.com/mpiorowski/svelte-init/blob/main/docs/TOAST.md)
+- [Drawer](https://github.com/mpiorowski/svelte-init/blob/main/docs/DRAWER.md)
+- [Dropdown](https://github.com/mpiorowski/svelte-init/blob/main/docs/DROPDOWN.md)
+- [Tooltip](https://github.com/mpiorowski/svelte-init/blob/main/docs/TOOLTIP.md)
+- [Table](https://github.com/mpiorowski/svelte-init/blob/main/docs/TABLE.md)
+- [Spinner](https://github.com/mpiorowski/svelte-init/blob/main/docs/SPINNER.md)
+
 ## Instalation
 
 ```
@@ -97,11 +110,6 @@ import { Button } '@mpiorowski/svelte-init'
 ```
 <Button>Open</Button>
 ```
-
-## Components
-
-- [Button](https://github.com/mpiorowski/svelte-init/blob/main/docs/BUTTOM.md)
-- [Input](https://github.com/mpiorowski/svelte-init/blob/main/docs/INPUT.md)
 
 ## Contributing
 

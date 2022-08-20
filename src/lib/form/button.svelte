@@ -1,23 +1,22 @@
 <script lang="ts">
   import Spinner from '../spinner.svelte';
 
-  export let form = '';
-  export let style: 'primary' | 'error' | 'ghost' = 'primary';
-  export let type: 'button' | 'submit' = 'button';
-  export let submitting = false;
+  export let type: 'primary' | 'error' | 'ghost' = 'primary';
+  export let loading = false;
   export let disabled = false;
+  export let form = '';
 </script>
 
 <button
   aria-label="button"
   {form}
   on:click
-  {type}
-  class={style}
-  disabled={disabled || submitting}
-  class:submitting
+  type={form ? 'submit' : 'button'}
+  class={type}
+  disabled={disabled || loading}
+  class:loading
 >
-  {#if submitting}
+  {#if loading}
     <div class="spinner">
       <Spinner />
     </div>
