@@ -1,16 +1,16 @@
 <script lang="ts">
   export let value: string | number;
   export let label: string;
+  export let name = '';
   export let error = '';
   export let required = false;
   export let disabled = false;
   export let small = false;
-  export let name = '';
   export let placeholder = '';
 
   export let max: number | undefined = undefined;
   export let min: number | undefined = undefined;
-  export let step = '0.01';
+  export let step = 0.01;
 
   $: if (!!max && !!value && Number(value) > max) {
     value = max;

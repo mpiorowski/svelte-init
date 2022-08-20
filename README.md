@@ -32,6 +32,7 @@ document.body.style.setProperty()
 
 - [Button](https://github.com/mpiorowski/svelte-init/blob/main/docs/BUTTOM.md)
 - [Input](https://github.com/mpiorowski/svelte-init/blob/main/docs/INPUT.md)
+- [InputNumber](https://github.com/mpiorowski/svelte-init/blob/main/docs/INPUT-NUMBER.md)
 - [Select](https://github.com/mpiorowski/svelte-init/blob/main/docs/SELECT.md)
 - [Checkbox](https://github.com/mpiorowski/svelte-init/blob/main/docs/CHECKBOX.md)
 - [Toast](https://github.com/mpiorowski/svelte-init/blob/main/docs/TOAST.md)

@@ -9,7 +9,7 @@ import { Input } from "@mpiorowski/svelte-init";
 # Usage
 
 ```
-<Input />
+<Input label="Input label" bind:value={inputValue} />
 ```
 
 ```
