@@ -1,7 +1,7 @@
 <script lang="ts">
   import { fade } from 'svelte/transition';
   import Checkbox from '../../lib/form/checkbox.svelte';
-  import Group from '../../lib/form/chexkboxGroup.svelte';
+  import CheckboxGroup from '../../lib/form/chexkboxGroup.svelte';
 
   let checked = false;
 
@@ -19,9 +19,13 @@
   <Checkbox bind:checked>True / false Checkbox</Checkbox>
   Values: {checked}
   <h1>Checkbox Group</h1>
-  <Group type="checkbox" values={checkboxValues} bind:group={groupCheckbox} />
+  <CheckboxGroup
+    type="checkbox"
+    values={checkboxValues}
+    bind:group={groupCheckbox}
+  />
   Values: {groupCheckbox}
   <h1>Radio Group</h1>
-  <Group type="radio" values={checkboxValues} bind:group={groupRadio} />
+  <CheckboxGroup type="radio" values={checkboxValues} bind:group={groupRadio} />
   Values: {groupRadio}
 </div>
