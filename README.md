@@ -105,16 +105,6 @@ In Your `app.css` add basic colors variables. If the file doesn't exsits, add it
 }
 ```
 
-## Usage
-
-```
-import { Button } '@mpiorowski/svelte-init'
-```
-
-```
-<Button>Open</Button>
-```
-
 ## Contributing
 
-All contributions and new ideas are really welcome, but please remember, that we want to keep it simple :). All new features can be discussted [here](https://github.com/mpiorowski/svelte-init/discussions).
+Every contribution is really appreciated, and new ideas are welcome, but please remember, that we want to keep it simple :). All new features can be discussted [here](https://github.com/mpiorowski/svelte-init/discussions).
