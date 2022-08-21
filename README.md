@@ -6,10 +6,13 @@
   A low-overhead Svelte UI library with the basic, most useful components, to help with the initial development.
 </p>
 
-[![NPM](https://img.shields.io/github/license/@mpiorowski/svelte-init)](https://github.com/@mpiorowski/svelte-init/blob/main/LICENSE)
-[![npm](https://img.shields.io/npm/v/@mpiorowski/svelte-init)](https://www.npmjs.com/package/@mpiorowski/svelte-init)
+<div align="center">
 
----
+[![npm](https://img.shields.io/github/license/mpiorowski/svelte-init)](https://github.com/mpiorowski/svelte-init/blob/main/LICENSE)
+[![npm](https://img.shields.io/npm/v/@mpiorowski/svelte-init)](https://www.npmjs.com/package/@mpiorowski/svelte-init)
+[![npm](https://img.shields.io/bundlephobia/min/@mpiorowski/svelte-init)](https://www.npmjs.com/package/@mpiorowski/svelte-init)
+
+</div>
 
 ## Demo
 
