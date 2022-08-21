@@ -60,11 +60,11 @@ document.body.style.setProperty()
 npm install @mpiorowski/svelte-init
 ```
 
-Import `@mpiorowski/svelte-init/styles.css` as soon as possible in Your app. If using sveltekit, you can import it in Your main `+layout.svelte`.
-
 ```
 import '@mpiorowski/svelte-init/styles.css';
 ```
+
+Import `styles.css` as soon as possible in Your app. If using sveltekit, you can import it in Your main `+layout.svelte`.
 
 And that's it, have fun :)
 
@@ -74,6 +74,7 @@ In Your global css file (must be imported after `styles.css`) you can set any of
 
 ```
 :root {
+  --btn-text: #ffffff;
   --btn-primary: #006d75;
   --btn-primary-hover: #08979c;
   --btn-primary-focus: #13c2c2;
