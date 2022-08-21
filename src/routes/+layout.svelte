@@ -13,7 +13,7 @@
 </svelte:head>
 
 <div class="header">
-  <a href="https://svelte-init.vercel.app">SvelteInit</a>
+  <a href="/">SvelteInit</a>
   <a class="github" href="https://github.com/mpiorowski/svelte-init#readme">
     <GithubIcon />
   </a>
@@ -47,7 +47,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 0.7rem;
     gap: 20px;
   }
   .github {
@@ -68,17 +68,17 @@
     /* gap: 8px; */
     border-right: 1px solid #434343;
   }
-  a {
+  .navigation a {
     display: flex;
     align-items: center;
     border-bottom: 1px solid #434343;
-    padding: 0.5rem;
+    padding: 0.7rem;
   }
   a:hover {
     opacity: 0.8;
   }
   a.active {
-    background-color: #434343;
+    opacity: 0.5;
   }
   .content {
     display: flex;
