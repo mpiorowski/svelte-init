@@ -3,6 +3,7 @@
   import '../preflight.css';
   import '../app.css';
   import Config from './config.svelte';
+  import { GithubIcon } from '../lib';
   $: url = $page.url.pathname;
 </script>
 
@@ -11,9 +12,14 @@
   <meta name="description" content="SvelteInit" />
 </svelte:head>
 
+<div class="header">
+  <a class="github" href="https://github.com/mpiorowski/svelte-init#readme">
+    <GithubIcon />
+  </a>
+</div>
+
 <div class="main">
   <div class="navigation">
-    <a href="/" class={url === '/' ? 'active' : ''}>Instalation</a>
     <a href="/button" class={url === '/button' ? 'active' : ''}>Button</a>
     <a href="/input" class={url === '/input' ? 'active' : ''}>Input</a>
     <a href="/select" class={url === '/select' ? 'active' : ''}>Select</a>
@@ -34,11 +40,26 @@
 </div>
 
 <style>
+  .header {
+    height: 40px;
+    border-bottom: 1px solid #434343;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 10px;
+    gap: 20px;
+  }
+  .github {
+    fill: white;
+  }
+  .github:hover {
+    cursor: pointer;
+  }
   .main {
     display: grid;
     grid-template-columns: 200px 1fr 200px;
     overflow: auto;
-    height: 100vh;
+    height: calc(100vh - 40px);
   }
   .navigation {
     display: flex;

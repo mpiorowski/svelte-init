@@ -25,3 +25,5 @@ export { default as Tooltip } from './tooltip.svelte';
 export { useAccordion } from './useAccordion';
 export { useClickOutside } from './useClickOutside';
 export { usePagination } from './usePagination';
+export { default as AvatarIcon } from './icon/avatar.svelte';
+export { default as GithubIcon } from './icon/github.svelte';
