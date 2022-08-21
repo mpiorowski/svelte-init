@@ -1,6 +1,5 @@
 <script lang="ts">
   import { page } from '$app/stores';
-  import '../preflight.css';
   import '../app.css';
   import Config from './config.svelte';
   import { GithubIcon } from '../lib';
@@ -13,6 +12,7 @@
 </svelte:head>
 
 <div class="header">
+  <a href="https://svelte-init.vercel.app">SvelteInit</a>
   <a class="github" href="https://github.com/mpiorowski/svelte-init#readme">
     <GithubIcon />
   </a>
@@ -44,9 +44,9 @@
     height: 40px;
     border-bottom: 1px solid #434343;
     display: flex;
-    justify-content: right;
     align-items: center;
-    padding-right: 10px;
+    justify-content: space-between;
+    padding: 10px;
     gap: 20px;
   }
   .github {

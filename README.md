@@ -18,7 +18,7 @@
 
 ## Features
 
-- It just works, copy two files, and You're ready to go
+- It just works, add css variables and You're ready to go
 - Written fully in [TypeScript](https://typescriptlang.org/)
 - Basic color configuration using css variables
 - No third-party dependency usage
@@ -51,14 +51,7 @@ document.body.style.setProperty()
 npm install @mpiorowski/svelte-init
 ```
 
-**If You are using [tailwind](https://tailwindcss.com), you can skip this step.**  
-In Your `+layout.svelte` add `preflight.css` (copied from [tailwind](https://tailwindcss.com/docs/preflight)). It set's up initial css, so it's much easier to work with it.
-
-```
-import "@mpiorowski/svelte-init/preflight.css";
-```
-
-In Your `app.css` add basic colors variables. If the file doesn't exsits, add it and import it in `+layout.svelte`. It must imported AFTER `@mpiorowski/svelte-init/preflight.css`.
+In Your `app.css` add basic colors variables. If the file doesn't exsits, add it and import it in `+layout.svelte`.
 
 ```
 :root {
