@@ -1,6 +1,6 @@
 <script lang="ts">
   import { page } from '$app/stores';
-  import '@mpiorowski/svelte-init/styles.css';
+  import '../styles.css';
   import '../app.css';
   import Config from './config.svelte';
   import { GithubIcon } from '../lib';

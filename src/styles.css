@@ -1,6 +1,7 @@
 @import './preflight.css';
 
 :root {
+  --btn-text: #ffffff;
   --btn-primary: #006d75;
   --btn-primary-hover: #08979c;
   --btn-primary-focus: #13c2c2;

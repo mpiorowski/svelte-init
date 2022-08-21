@@ -4,6 +4,7 @@
 
   import { page } from '$app/stores';
 
+  let btnText = '#ffffff';
   let btnPrimary = '#006d75';
   let btnPrimaryHover = '#08979c';
   let btnPrimaryFocus = '#13c2c2';
@@ -44,6 +45,7 @@
     styles = document.body.style;
   });
   $: if (styles) {
+    styles.setProperty('--btn-text', btnText);
     styles.setProperty('--btn-primary', btnPrimary);
     styles.setProperty('--btn-primary-hover', btnPrimaryHover);
     styles.setProperty('--btn-primary-focus', btnPrimaryFocus);
@@ -85,6 +87,7 @@
     bind:value={inputPlaceholder}
   />
 {:else if $page.url.pathname === '/button'}
+  <Input small type="color" label="--btn-text" bind:value={btnText} />
   <Input small type="color" label="--btn-primary" bind:value={btnPrimary} />
   <Input
     small
