@@ -48,6 +48,12 @@ document.body.style.setProperty()
 - [Table](https://github.com/mpiorowski/svelte-init/blob/main/docs/TABLE.md)
 - [Spinner](https://github.com/mpiorowski/svelte-init/blob/main/docs/SPINNER.md)
 
+## Functions
+
+- [useAccordion](https://github.com/mpiorowski/svelte-init/blob/main/docs/FUNCTIONS.md#useAccordion)
+- [usePagination](https://github.com/mpiorowski/svelte-init/blob/main/docs/FUNCTIONS.md#usePagination)
+- [useClickOutside](https://github.com/mpiorowski/svelte-init/blob/main/docs/FUNCTIONS.md#useClickOutside)
+
 ## Instalation
 
 ```
