@@ -18,10 +18,11 @@
 
 ## Features
 
-- It just works, add css variables and You're ready to go
+- It just works, import one file and You're ready to go
 - Written fully in [TypeScript](https://typescriptlang.org/)
 - Basic color configuration using css variables
 - No third-party dependency usage
+- Using [tailwind preflight](https://tailwindcss.com/docs/preflight) css setup
 - No dark / light theme included, but can be easly achived using:
 
 ```
@@ -51,7 +52,13 @@ document.body.style.setProperty()
 npm install @mpiorowski/svelte-init
 ```
 
-In Your `app.css` add basic colors variables. If the file doesn't exsits, add it and import it in `+layout.svelte`.
+Import `@mpiorowski/svelte-ui/styles.css` as soon as possible in Your app. If using sveltekit, you can import it in Your main `+layout.svelte`.
+
+And that's it, have fun :)
+
+## Config
+
+In Your global css file (must be imported after `@mpiorowski/svelte-ui/styles.css`) you can set any of the global variables and change the default color. List of all available variables:
 
 ```
 :root {
@@ -91,10 +98,6 @@ In Your `app.css` add basic colors variables. If the file doesn't exsits, add it
   --tooltip-text: #ffffff;
 
   --shadow: 0 0 0 0px #fff, 0 0 0 0px #fff, 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-}
-
-.no-scroll {
-  overflow: hidden;
 }
 ```
 
