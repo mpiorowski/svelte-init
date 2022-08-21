@@ -55,14 +55,14 @@ npm install @mpiorowski/svelte-init
 Import `@mpiorowski/svelte-init/styles.css` as soon as possible in Your app. If using sveltekit, you can import it in Your main `+layout.svelte`.
 
 ```
-import 'styles.css';
+import '@mpiorowski/svelte-init/styles.css';
 ```
 
 And that's it, have fun :)
 
 ## Config
 
-In Your global css file (must be imported after `@mpiorowski/svelte-ui/styles.css`) you can set any of the global variables and change the default color. List of all available variables:
+In Your global css file (must be imported after `styles.css`) you can set any of the global variables and change the default color. List of all available variables:
 
 ```
 :root {
