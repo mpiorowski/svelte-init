@@ -52,7 +52,11 @@ document.body.style.setProperty()
 npm install @mpiorowski/svelte-init
 ```
 
-Import `@mpiorowski/svelte-ui/styles.css` as soon as possible in Your app. If using sveltekit, you can import it in Your main `+layout.svelte`.
+Import `@mpiorowski/svelte-init/styles.css` as soon as possible in Your app. If using sveltekit, you can import it in Your main `+layout.svelte`.
+
+```
+import 'styles.css';
+```
 
 And that's it, have fun :)
 
