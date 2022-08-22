@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/mpiorowski/svelte-init">
+  <a href="https://github.com/mpiorowski/svelte-init" target="_blank">
     <img src="./.github/logo.svg" alt="SvelteInit">
   </a>
 </p>
