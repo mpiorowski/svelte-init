@@ -1,5 +1,7 @@
 <p align="center">
-  <img src="./.github/logo.svg" alt="SvelteInit">
+  <a href="https://github.com/mpiorowski/svelte-init">
+    <img src="./.github/logo.svg" alt="SvelteInit">
+  </a>
 </p>
 
 <p align="center">
