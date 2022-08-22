@@ -14,7 +14,10 @@
 <div class="header">
   <a href="/">SvelteInit</a>
   <div class="icons">
-    <a class="icon" href="https://www.npmjs.com/package/@mpiorowski/svelte-init">
+    <a
+      class="icon"
+      href="https://www.npmjs.com/package/@mpiorowski/svelte-init"
+    >
       <NpmIcon />
     </a>
     <a class="icon" href="https://github.com/mpiorowski/svelte-init#readme">
