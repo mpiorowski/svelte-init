@@ -2,7 +2,7 @@
   import { page } from '$app/stores';
   import '../app.css';
   import Config from './config.svelte';
-  import { GithubIcon } from '../lib';
+  import { GithubIcon, NpmIcon } from '../lib';
   $: url = $page.url.pathname;
 </script>
 
@@ -13,9 +13,14 @@
 
 <div class="header">
   <a href="/">SvelteInit</a>
-  <a class="github" href="https://github.com/mpiorowski/svelte-init#readme">
-    <GithubIcon />
-  </a>
+  <div class="icons">
+    <a class="icon" href="https://www.npmjs.com/package/@mpiorowski/svelte-init">
+      <NpmIcon />
+    </a>
+    <a class="icon" href="https://github.com/mpiorowski/svelte-init#readme">
+      <GithubIcon />
+    </a>
+  </div>
 </div>
 
 <div class="main">
@@ -50,10 +55,15 @@
     padding: 0.7rem;
     gap: 20px;
   }
-  .github {
+  .icons {
+    display: flex;
+    gap: 20px;
+  }
+  .icon {
+    color: white;
     fill: white;
   }
-  .github:hover {
+  .icon:hover {
     cursor: pointer;
   }
   .main {
