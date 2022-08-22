@@ -20,7 +20,7 @@
 
 <Toast />
 
-<div in:fade style="display: flex; gap: 20px; flex-direction: column;">
+<div in:fade class="content">
   <h1>Predefined Toast</h1>
   <div class="flex-gap">
     <Button on:click={toastSave}>Toast save</Button>

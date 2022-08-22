@@ -6,7 +6,7 @@
   let move = 0.2;
 </script>
 
-<div in:fade class="grid">
+<div in:fade class="content">
   <h1>Tooltip</h1>
   <InputNumber bind:value={move} label="Move tooltip" />
   <Tooltip tooltip={'tooltip text'} position={'top'} {move}>
@@ -24,12 +24,6 @@
 </div>
 
 <style>
-  .grid {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    gap: 40px;
-  }
   .tooltip-container {
     color: black;
     display: flex;

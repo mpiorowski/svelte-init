@@ -14,7 +14,7 @@
   let groupRadio = '1';
 </script>
 
-<div in:fade style="display: flex; gap: 20px; flex-direction: column;">
+<div in:fade class="content">
   <h1>True / false Checkbox</h1>
   <Checkbox bind:checked>True / false Checkbox</Checkbox>
   Values: {checked}

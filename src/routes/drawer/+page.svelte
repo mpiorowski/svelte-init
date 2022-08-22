@@ -5,7 +5,7 @@
   let isDrawerOpen = false;
 </script>
 
-<div in:fade style="display: flex; gap: 20px; flex-direction: column;">
+<div in:fade class="content">
   <h1>Drawer</h1>
   <Drawer
     isOpen={isDrawerOpen}

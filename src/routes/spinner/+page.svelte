@@ -9,7 +9,7 @@
   let size = 40;
 </script>
 
-<div in:fade style="display: flex; gap: 20px; flex-direction: column;">
+<div in:fade class="content">
   <h1>Spinner</h1>
 
   <Checkbox bind:checked={center}>Center spinner</Checkbox>

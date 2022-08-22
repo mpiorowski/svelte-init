@@ -41,7 +41,7 @@
     line-height: 1.25rem;
 
     transition: all 0.1s ease-in-out;
-    
+
     color: var(--btn-text);
     outline: 0px solid var(--btn-primary);
     box-shadow: var(--shadow);

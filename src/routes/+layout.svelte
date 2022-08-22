@@ -1,6 +1,5 @@
 <script lang="ts">
   import { page } from '$app/stores';
-  import '../styles.css';
   import '../app.css';
   import Config from './config.svelte';
   import { GithubIcon } from '../lib';
@@ -21,6 +20,7 @@
 
 <div class="main">
   <div class="navigation">
+    <a href="/config" class={url === '/config' ? 'active' : ''}>Config</a>
     <a href="/button" class={url === '/button' ? 'active' : ''}>Button</a>
     <a href="/input" class={url === '/input' ? 'active' : ''}>Input</a>
     <a href="/select" class={url === '/select' ? 'active' : ''}>Select</a>
@@ -32,7 +32,7 @@
     <a href="/table" class={url === '/table' ? 'active' : ''}>Table</a>
     <a href="/spinner" class={url === '/spinner' ? 'active' : ''}>Spinner</a>
   </div>
-  <div class="content">
+  <div class="slot">
     <slot />
   </div>
   <div class="config">
@@ -80,16 +80,13 @@
   a.active {
     opacity: 0.5;
   }
-  .content {
+  .slot {
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 20px;
-    padding: 1rem;
-    max-width: 800px;
-    width: 100%;
-    margin-top: 2rem;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 2rem;
+    overflow: auto;
   }
   .config {
     border-left: 1px solid #434343;

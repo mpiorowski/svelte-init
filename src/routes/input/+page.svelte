@@ -13,7 +13,7 @@
   let withError = false;
 </script>
 
-<div in:fade style="display: flex; gap: 20px; flex-direction: column;">
+<div in:fade class="content">
   <h1>Input</h1>
   <Checkbox bind:checked={withError}>With errror</Checkbox>
   <Checkbox bind:checked={required}>Required</Checkbox>
