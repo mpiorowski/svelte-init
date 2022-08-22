@@ -9,8 +9,13 @@
     "components",
     "library"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mpiorowski/svelte-init"
+  },
+  "homepage": "https://svelte-init.vercel.app",
   "license": "MIT",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "type": "module",
   "scripts": {
     "dev": "vite dev",
@@ -43,8 +48,5 @@
     "tslib": "^2.4.0",
     "typescript": "^4.7.4",
     "vite": "^3.0.9"
-  },
-  "dependencies": {
-    "@mpiorowski/svelte-init": "^0.0.5"
   }
 }
