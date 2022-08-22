@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center">SvelteInit</h1>
+  <img src="./.github/logo.svg" alt="SvelteInit">
 </p>
 
 <p align="center">

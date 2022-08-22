@@ -28,3 +28,4 @@ export { usePagination } from './usePagination';
 export { default as AvatarIcon } from './icon/avatar.svelte';
 export { default as GithubIcon } from './icon/github.svelte';
 export { default as NpmIcon } from './icon/npm.svelte';
+export { default as LogoIcon } from './icon/logo.svelte';
