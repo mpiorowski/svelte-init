@@ -1,11 +1,6 @@
 <script lang="ts">
   import { fade } from 'svelte/transition';
   import { LogoIcon } from '../lib';
-
-  import { createArray } from '@mpiorowski/utils';
-
-  const test = createArray(10);
-  console.log(test);
 </script>
 
 <div in:fade class="content">
