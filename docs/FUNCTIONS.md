@@ -1,5 +1,17 @@
 # Functions
 
+## useMediaQuery
+
+```
+<script lang="ts">
+  import { useMediaQuery } from '@mpiorowski/svelte-init';
+
+  const { isMediaQueryLg, isMediaQueryMd, isMediaQuerySm } = useMediaQuery(window, "1024px", "760px", "640px" );
+</script>
+```
+
+Setting screen size inside useMediaQuery is optional.
+
 ## useAccordion
 
 ```

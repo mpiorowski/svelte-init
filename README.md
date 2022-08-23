@@ -52,6 +52,7 @@ document.body.style.setProperty()
 
 ## Functions
 
+- [useMediaQuery](https://github.com/mpiorowski/svelte-init/blob/main/docs/FUNCTIONS.md#useMediaQuery)
 - [useAccordion](https://github.com/mpiorowski/svelte-init/blob/main/docs/FUNCTIONS.md#useAccordion)
 - [usePagination](https://github.com/mpiorowski/svelte-init/blob/main/docs/FUNCTIONS.md#usePagination)
 - [useClickOutside](https://github.com/mpiorowski/svelte-init/blob/main/docs/FUNCTIONS.md#useClickOutside)
