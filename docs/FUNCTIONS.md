@@ -8,6 +8,12 @@
 
   const { isMediaQueryLg, isMediaQueryMd, isMediaQuerySm } = useMediaQuery(window, "1024px", "760px", "640px" );
 </script>
+
+{#if isMediaQueryLg()}
+  <div>
+    ...
+  </div>
+{/if}
 ```
 
 Setting screen size inside useMediaQuery is optional.
