@@ -1,7 +1,7 @@
 <script lang="ts">
-  export let group: string | string[];
+  export let group: boolean | string | string[];
   export let values: {
-    value: string;
+    value: string | boolean;
     label: string;
   }[];
   export let type: 'radio' | 'checkbox' = 'checkbox';
