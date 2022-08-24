@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let value: string | number;
+  export let value: number | null;
   export let label: string;
   export let name = '';
   export let error = '';
