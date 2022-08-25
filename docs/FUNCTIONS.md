@@ -4,12 +4,12 @@
 
 ```
 <script lang="ts">
-  import { useMediaQuery } from '@mpiorowski/svelte-init';
+  import { browser } from '$app/env';
 
-  const { isMediaQueryLg, isMediaQueryMd, isMediaQuerySm } = useMediaQuery(window, "1024px", "760px", "640px" );
+  const { isMediaQueryLg, isMediaQueryMd, isMediaQuerySm } = useMediaQuery(browser, "1024px", "760px", "640px" );
 </script>
 
-{#if isMediaQueryLg()}
+{#if isMediaQueryLg}
   <div>
     ...
   </div>
