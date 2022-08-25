@@ -72,7 +72,7 @@
     background-color: var(--btn-error-hover);
   }
   button.error:focus {
-    box-shadow: 0 0 0 2px var(--btn-error-focus), 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    outline: 2px solid var(--btn-error-focus);
   }
 
   button.ghost {
@@ -82,6 +82,6 @@
     background-color: var(--btn-ghost-hover);
   }
   button.ghost:focus {
-    box-shadow: 0 0 0 2px var(--btn-ghost-focus), 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    outline: 2px solid var(--btn-ghost-focus);
   }
 </style>
