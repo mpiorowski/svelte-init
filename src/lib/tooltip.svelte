@@ -43,6 +43,7 @@
 
     background-color: var(--tooltip-background);
     color: var(--tooltip-text);
+    box-shadow: var(--shadow);
   }
 
   /* TODO - add arrow */

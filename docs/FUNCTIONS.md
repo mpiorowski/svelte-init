@@ -4,7 +4,7 @@
 
 ```
 <script lang="ts">
-  import { browser } from '$app/env';
+  import { browser } from '$app/environment';
 
   const { isMediaQueryLg, isMediaQueryMd, isMediaQuerySm } = useMediaQuery(browser, "1024px", "760px", "640px" );
 </script>
