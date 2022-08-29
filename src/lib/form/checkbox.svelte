@@ -1,12 +1,6 @@
 <script lang="ts">
   export let checked: boolean;
-  export let onChange:
-    | ((
-        e: Event & {
-          currentTarget: EventTarget & HTMLInputElement;
-        }
-      ) => void)
-    | undefined = undefined;
+  export let onChange: (() => void) | undefined;
 </script>
 
 <label class="checkbox">

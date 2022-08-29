@@ -13,10 +13,10 @@ import { Checkbox } from "@mpiorowski/svelte-init";
 ```
 
 ```
-<Checkbox bind:checked={chekboxValue} onChange={(e) => console.log(e)}>True / false values</Checkbox>
+<Checkbox bind:checked={chekboxValue} onChange={() => console.log('changed!')}>True / false values</Checkbox>
 ```
 
-| Prop     | Values                                                        | Default   |
-| -------- | ------------------------------------------------------------- | --------- |
-| checked  | boolean                                                       |           |
-| onChange | (e: {currentTarget: EventTarget & HTMLInputElement} ) => void | undefined |
+| Prop     | Values     | Default   |
+| -------- | ---------- | --------- |
+| checked  | boolean    |           |
+| onChange | () => void | undefined |
