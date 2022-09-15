@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/mpiorowski/svelte-init/#readme" target="_blank">
-    <img width="300" src="./.github/logo.png" alt="SvelteInit">
+    <img width="300" src="./static/logo.png" alt="SvelteInit">
   </a>
 </p>
 
