@@ -116,7 +116,3 @@ In Your global css file (must be imported after `styles.css`) you can set any of
   --shadow: 0 0 0 0px #fff, 0 0 0 0px #fff, 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 }
 ```
-
-## Contributing
-
-Every contribution is really appreciated, and new ideas are welcome, but please remember, that we want to keep it simple :). All new features can be discussted [here](https://github.com/mpiorowski/svelte-init/discussions).
