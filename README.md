@@ -69,8 +69,6 @@ import '@mpiorowski/svelte-init/styles.css';
 
 Import `styles.css` as soon as possible in Your app. If using sveltekit, you can import it in Your main `+layout.svelte`.
 
-And that's it, have fun :)
-
 ## Config
 
 In Your global css file (must be imported after `styles.css`) you can set any of the global variables and change the default color. List of all available variables:
