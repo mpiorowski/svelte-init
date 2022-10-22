@@ -28,17 +28,17 @@
 
 <div class="main">
   <div class="navigation">
-    <a href="/config" class={url === '/config' ? 'active' : ''}>Config</a>
-    <a href="/button" class={url === '/button' ? 'active' : ''}>Button</a>
     <a href="/input" class={url === '/input' ? 'active' : ''}>Input</a>
     <a href="/select" class={url === '/select' ? 'active' : ''}>Select</a>
     <a href="/checkbox" class={url === '/checkbox' ? 'active' : ''}>Checkbox</a>
+    <a href="/button" class={url === '/button' ? 'active' : ''}>Button</a>
     <a href="/dropdown" class={url === '/dropdown' ? 'active' : ''}>Dropdown</a>
     <a href="/tooltip" class={url === '/tooltip' ? 'active' : ''}>Tooltip</a>
     <a href="/toast" class={url === '/toast' ? 'active' : ''}>Toast</a>
     <a href="/drawer" class={url === '/drawer' ? 'active' : ''}>Drawer</a>
     <a href="/table" class={url === '/table' ? 'active' : ''}>Table</a>
     <a href="/spinner" class={url === '/spinner' ? 'active' : ''}>Spinner</a>
+    <a href="/config" class={url === '/config' ? 'active' : ''}>Config</a>
   </div>
   <div class="slot">
     <slot />

@@ -1,2 +1,4 @@
+- modal
 - shadow for tooltip
 - toast should not be covered by drawer
+- visible props for spinner
