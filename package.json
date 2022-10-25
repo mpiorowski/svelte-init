@@ -1,53 +1,53 @@
 {
-  "name": "@mpiorowski/svelte-init",
-  "description": "Low-overhead Svelte UI library",
-  "keywords": [
-    "svelte",
-    "sveltekit",
-    "svelteui",
-    "ui",
-    "components",
-    "library"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mpiorowski/svelte-init"
-  },
-  "homepage": "https://svelte-init.vercel.app",
-  "license": "MIT",
-  "version": "1.4.4",
-  "type": "module",
-  "scripts": {
-    "start": "vite dev",
-    "build": "vite build",
-    "package": "svelte-kit sync && svelte-package && cp ./src/styles.css ./package/styles.css && cp ./src/preflight.css ./package/preflight.css",
-    "test": "playwright test",
-    "check": "svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-    "lint": "prettier --check --plugin-search-dir=. src && eslint src",
-    "format": "prettier --write --plugin-search-dir=. ."
-  },
-  "exports": {
-    "./styles.css": "./styles.css"
-  },
-  "devDependencies": {
-    "@playwright/test": "1.25.0",
-    "@sveltejs/adapter-auto": "1.0.0-next.67",
-    "@sveltejs/kit": "1.0.0-next.445",
-    "@sveltejs/package": "1.0.0-next.1",
-    "@typescript-eslint/eslint-plugin": "5.33.1",
-    "@typescript-eslint/parser": "5.33.1",
-    "eslint": "8.22.0",
-    "eslint-config-prettier": "8.5.0",
-    "eslint-plugin-prettier": "4.2.1",
-    "eslint-plugin-svelte3": "4.0.0",
-    "prettier": "2.7.1",
-    "prettier-plugin-svelte": "2.7.0",
-    "svelte": "3.49.0",
-    "svelte-check": "2.8.1",
-    "svelte-preprocess": "4.10.7",
-    "tslib": "2.4.0",
-    "typescript": "4.7.4",
-    "vite": "3.0.9"
-  }
+    "name": "@mpiorowski/svelte-init",
+    "description": "Low-overhead Svelte UI library",
+    "keywords": [
+        "svelte",
+        "sveltekit",
+        "svelteui",
+        "ui",
+        "components",
+        "library"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mpiorowski/svelte-init"
+    },
+    "homepage": "https://svelte-init.vercel.app",
+    "license": "MIT",
+    "version": "1.4.4",
+    "type": "module",
+    "scripts": {
+        "start": "vite dev",
+        "build": "vite build",
+        "package": "svelte-kit sync && svelte-package && cp ./src/styles.css ./package/styles.css && cp ./src/preflight.css ./package/preflight.css",
+        "test": "playwright test",
+        "check": "svelte-check --tsconfig ./tsconfig.json",
+        "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+        "lint": "prettier --check --plugin-search-dir=. src && eslint src",
+        "format": "prettier --write --plugin-search-dir=. ."
+    },
+    "exports": {
+        "./styles.css": "./styles.css"
+    },
+    "devDependencies": {
+        "@playwright/test": "1.25.0",
+        "@sveltejs/adapter-auto": "1.0.0-next.67",
+        "@sveltejs/kit": "1.0.0-next.445",
+        "@sveltejs/package": "1.0.0-next.1",
+        "@typescript-eslint/eslint-plugin": "5.33.1",
+        "@typescript-eslint/parser": "5.33.1",
+        "eslint": "8.22.0",
+        "eslint-config-prettier": "8.5.0",
+        "eslint-plugin-prettier": "4.2.1",
+        "eslint-plugin-svelte3": "4.0.0",
+        "prettier": "2.7.1",
+        "prettier-plugin-svelte": "2.7.0",
+        "svelte": "3.49.0",
+        "svelte-check": "2.8.1",
+        "svelte-preprocess": "4.10.7",
+        "tslib": "2.4.0",
+        "typescript": "4.7.4",
+        "vite": "3.0.9"
+    }
 }

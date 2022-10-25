@@ -22,12 +22,12 @@
 
 ## Features
 
-- It just works, import one file and You're ready to go
-- Written fully in [TypeScript](https://typescriptlang.org/)
-- Basic color configuration using css variables
-- No third-party dependency usage
-- Using [tailwind preflight](https://tailwindcss.com/docs/preflight) css setup
-- No dark / light theme included, but can be easly achived using:
+-   It just works, import one file and You're ready to go
+-   Written fully in [TypeScript](https://typescriptlang.org/)
+-   Basic color configuration using css variables
+-   No third-party dependency usage
+-   Using [tailwind preflight](https://tailwindcss.com/docs/preflight) css setup
+-   No dark / light theme included, but can be easly achived using:
 
 ```
 document.body.style.setProperty()
@@ -35,27 +35,27 @@ document.body.style.setProperty()
 
 ## Components
 
-- [Button](https://github.com/mpiorowski/svelte-init/blob/main/docs/BUTTOM.md)
-- [Input](https://github.com/mpiorowski/svelte-init/blob/main/docs/INPUT.md)
-- [InputNumber](https://github.com/mpiorowski/svelte-init/blob/main/docs/INPUT-NUMBER.md)
-- [InputSimple](https://github.com/mpiorowski/svelte-init/blob/main/docs/INPUT-SIMPLE.md)
-- [Textarea](https://github.com/mpiorowski/svelte-init/blob/main/docs/TEXTAREA.md)
-- [Select](https://github.com/mpiorowski/svelte-init/blob/main/docs/SELECT.md)
-- [Checkbox](https://github.com/mpiorowski/svelte-init/blob/main/docs/CHECKBOX.md)
-- [CheckboxGroup](https://github.com/mpiorowski/svelte-init/blob/main/docs/CHECKBOX-GROUP.md)
-- [Toast](https://github.com/mpiorowski/svelte-init/blob/main/docs/TOAST.md)
-- [Drawer](https://github.com/mpiorowski/svelte-init/blob/main/docs/DRAWER.md)
-- [Dropdown](https://github.com/mpiorowski/svelte-init/blob/main/docs/DROPDOWN.md)
-- [Tooltip](https://github.com/mpiorowski/svelte-init/blob/main/docs/TOOLTIP.md)
-- [Table](https://github.com/mpiorowski/svelte-init/blob/main/docs/TABLE.md)
-- [Spinner](https://github.com/mpiorowski/svelte-init/blob/main/docs/SPINNER.md)
+-   [Button](https://github.com/mpiorowski/svelte-init/blob/main/docs/BUTTOM.md)
+-   [Input](https://github.com/mpiorowski/svelte-init/blob/main/docs/INPUT.md)
+-   [InputNumber](https://github.com/mpiorowski/svelte-init/blob/main/docs/INPUT-NUMBER.md)
+-   [InputSimple](https://github.com/mpiorowski/svelte-init/blob/main/docs/INPUT-SIMPLE.md)
+-   [Textarea](https://github.com/mpiorowski/svelte-init/blob/main/docs/TEXTAREA.md)
+-   [Select](https://github.com/mpiorowski/svelte-init/blob/main/docs/SELECT.md)
+-   [Checkbox](https://github.com/mpiorowski/svelte-init/blob/main/docs/CHECKBOX.md)
+-   [CheckboxGroup](https://github.com/mpiorowski/svelte-init/blob/main/docs/CHECKBOX-GROUP.md)
+-   [Toast](https://github.com/mpiorowski/svelte-init/blob/main/docs/TOAST.md)
+-   [Drawer](https://github.com/mpiorowski/svelte-init/blob/main/docs/DRAWER.md)
+-   [Dropdown](https://github.com/mpiorowski/svelte-init/blob/main/docs/DROPDOWN.md)
+-   [Tooltip](https://github.com/mpiorowski/svelte-init/blob/main/docs/TOOLTIP.md)
+-   [Table](https://github.com/mpiorowski/svelte-init/blob/main/docs/TABLE.md)
+-   [Spinner](https://github.com/mpiorowski/svelte-init/blob/main/docs/SPINNER.md)
 
 ## Functions
 
-- [useMediaQuery](https://github.com/mpiorowski/svelte-init/blob/main/docs/FUNCTIONS.md#useMediaQuery)
-- [useAccordion](https://github.com/mpiorowski/svelte-init/blob/main/docs/FUNCTIONS.md#useAccordion)
-- [usePagination](https://github.com/mpiorowski/svelte-init/blob/main/docs/FUNCTIONS.md#usePagination)
-- [useClickOutside](https://github.com/mpiorowski/svelte-init/blob/main/docs/FUNCTIONS.md#useClickOutside)
+-   [useMediaQuery](https://github.com/mpiorowski/svelte-init/blob/main/docs/FUNCTIONS.md#useMediaQuery)
+-   [useAccordion](https://github.com/mpiorowski/svelte-init/blob/main/docs/FUNCTIONS.md#useAccordion)
+-   [usePagination](https://github.com/mpiorowski/svelte-init/blob/main/docs/FUNCTIONS.md#usePagination)
+-   [useClickOutside](https://github.com/mpiorowski/svelte-init/blob/main/docs/FUNCTIONS.md#useClickOutside)
 
 ## Instalation
 

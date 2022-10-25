@@ -13,12 +13,12 @@ export { default as Textarea } from './form/textarea.svelte';
 export { default as Spinner } from './spinner.svelte';
 export { default as Table } from './table/table.svelte';
 export {
-  notifications,
-  toast,
-  toastDelete,
-  toastError,
-  toastSave,
-  ToastType,
+    notifications,
+    toast,
+    toastDelete,
+    toastError,
+    toastSave,
+    ToastType,
 } from './toast/toast.helper';
 export { default as Toast } from './toast/toast.svelte';
 export { default as Tooltip } from './tooltip.svelte';
