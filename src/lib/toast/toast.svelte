@@ -50,7 +50,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 1001;
   }
   .toast {
     display: flex;

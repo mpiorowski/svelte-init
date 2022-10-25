@@ -40,7 +40,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 999;
+    z-index: 998;
     background-color: rgba(0, 0, 0, 0.5);
   }
   .drawer {
@@ -50,7 +50,7 @@
     width: 100%;
     max-width: 600px; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 1010; /* Stay on top */
+    z-index: 999; /* Stay on top */
     top: 0; /* Stay at the top */
     right: 0;
 
