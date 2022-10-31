@@ -1,8 +1,8 @@
 import { writable, type Writable } from 'svelte/store';
 
 export const accordionReducer = (
-    index: number,
-    openedIndex: Writable<number[]>
+    index: number | string,
+    openedIndex: Writable<(number | string)[]>
 ) => {
     openedIndex.update((val) => {
         const closing = val.includes(index);
@@ -15,8 +15,8 @@ export const accordionReducer = (
 };
 
 export const useAccordion = (initReducer = accordionReducer) => {
-    const openedIndex = writable<number[]>([]);
-    const toggleIndex = (index: number) => {
+    const openedIndex = writable<(number | string)[]>([]);
+    const toggleIndex = (index: number | string) => {
         initReducer(index, openedIndex);
     };
 
