@@ -14,6 +14,7 @@
         class="drawer-overlay"
         transition:fade={{ duration: 200 }}
         on:click={onClose}
+        on:keypress={onClose}
         id="drawer-overlay"
     />
 

@@ -24,7 +24,7 @@
         "test": "playwright test",
         "check": "svelte-check --tsconfig ./tsconfig.json",
         "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-        "lint": "eslint src"
+        "lint": "svelte-check --tsconfig ./tsconfig.json && eslint src"
     },
     "exports": {
         "./styles.css": "./styles.css"

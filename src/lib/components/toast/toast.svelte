@@ -32,7 +32,11 @@
                     {notification.message}
                 {/if}
             </div>
-            <div class="close" on:click={() => removeToast(notification.id)}>
+            <div
+                class="close"
+                on:click={() => removeToast(notification.id)}
+                on:keypress={() => removeToast(notification.id)}
+            >
                 &times;
             </div>
         </div>
