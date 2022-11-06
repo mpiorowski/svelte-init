@@ -1,9 +1,6 @@
 <script lang="ts">
     import { fade } from 'svelte/transition';
-    import { Spinner } from '../../lib';
-
-    import Checkbox from '../../lib/form/checkbox.svelte';
-    import InputNumber from '../../lib/form/inputNumber.svelte';
+    import { Checkbox, InputNumber, Spinner } from '$lib';
 
     let center = false;
     let visible = true;

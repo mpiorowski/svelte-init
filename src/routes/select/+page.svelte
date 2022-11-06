@@ -1,8 +1,6 @@
 <script lang="ts">
     import { fade } from 'svelte/transition';
-    import { Checkbox } from '../../lib';
-
-    import Select from '../../lib/form/select.svelte';
+    import { Checkbox, Select } from '$lib';
     let select = '';
     let disabled = false;
     let required = false;

@@ -1,8 +1,6 @@
 <script lang="ts">
     import { fade } from 'svelte/transition';
-    import { Checkbox, Input, Textarea } from '../../lib';
-    import InputNumber from '../../lib/form/inputNumber.svelte';
-    import InputSimple from '../../lib/form/inputSimple.svelte';
+    import { Checkbox, Input, InputNumber, InputSimple, Textarea } from '$lib';
 
     let input = '';
     let textarea = '';

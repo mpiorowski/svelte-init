@@ -1,6 +1,6 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-    import { Input } from '../lib';
+    import { Input } from '$lib';
     import {
         btnText,
         btnPrimary,

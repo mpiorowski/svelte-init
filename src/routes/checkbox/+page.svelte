@@ -1,7 +1,6 @@
 <script lang="ts">
+    import { Checkbox, CheckboxGroup } from '$lib';
     import { fade } from 'svelte/transition';
-    import Checkbox from '../../lib/form/checkbox.svelte';
-    import CheckboxGroup from '../../lib/form/chexkboxGroup.svelte';
 
     let checked = false;
 

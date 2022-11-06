@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Table } from '../../lib';
+    import { Table } from '$lib';
     import { fade } from 'svelte/transition';
 </script>
 

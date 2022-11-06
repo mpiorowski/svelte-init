@@ -2,15 +2,15 @@
     import { fade } from 'svelte/transition';
     import {
         Button,
+        Input,
+        InputNumber,
         Select,
         toast,
         toastDelete,
         toastError,
         toastSave,
         ToastType,
-    } from '../../lib';
-    import Input from '../../lib/form/input.svelte';
-    import InputNumber from '../../lib/form/inputNumber.svelte';
+    } from '$lib';
 
     let toastMsg = '';
     let toastDuration = 3000;

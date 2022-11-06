@@ -1,7 +1,6 @@
 <script lang="ts">
     import { fade } from 'svelte/transition';
-    import { Tooltip } from '../../lib';
-    import InputNumber from '../../lib/form/inputNumber.svelte';
+    import { InputNumber, Tooltip } from '$lib';
 
     let move = 0.2;
 </script>

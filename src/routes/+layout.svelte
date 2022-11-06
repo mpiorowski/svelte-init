@@ -2,7 +2,7 @@
     import { page } from '$app/stores';
     import '../app.css';
     import Config from './config.svelte';
-    import { GithubIcon, NpmIcon, Toast } from '../lib';
+    import { GithubIcon, NpmIcon, Toast } from '$lib';
     $: url = $page.url.pathname;
 </script>
 

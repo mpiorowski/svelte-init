@@ -1,6 +1,6 @@
 <script lang="ts">
     import { fade } from 'svelte/transition';
-    import { Button, Drawer } from '../../lib';
+    import { Button, Drawer } from '$lib';
 
     let isDrawerOpen = false;
 </script>

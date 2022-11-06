@@ -1,6 +1,6 @@
 <script lang="ts">
     import { fade } from 'svelte/transition';
-    import { Button, Checkbox } from '../../lib';
+    import { Button, Checkbox } from '$lib';
     let disabled = false;
     let loading = false;
     let full = true;
