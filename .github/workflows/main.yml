@@ -1,12 +1,7 @@
 name: Lint main
-  # on:
-  #     push:
-  #         branches:
-  #             - release/*
 on:
   release:
     types: [created]
-
 jobs:
   lint:
     uses: ./.github/workflows/lint.yml
