@@ -1,2 +1,2 @@
 - modal
-- toast should not be covered by drawer
+- add jsdoc documentation

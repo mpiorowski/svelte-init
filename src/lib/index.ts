@@ -1,3 +1,4 @@
+// Components
 export { default as Drawer } from './components/drawer/drawer.svelte';
 export { default as Dropdown } from './components/dropdown.svelte';
 export { default as Button } from './components/form/button.svelte';
@@ -22,10 +23,14 @@ export {
 } from './components/toast/toast.helper';
 export { default as Toast } from './components/toast/toast.svelte';
 export { default as Tooltip } from './components/tooltip.svelte';
+
+// Functions
 export { useAccordion } from './functions/useAccordion';
 export { useClickOutside } from './functions/useClickOutside';
 export { usePagination } from './functions/usePagination';
 export { useMediaQuery } from './functions/useMediaQuery';
+
+// Icons
 export { default as AvatarIcon } from './icons/avatar.svelte';
 export { default as GithubIcon } from './icons/github.svelte';
 export { default as NpmIcon } from './icons/npm.svelte';

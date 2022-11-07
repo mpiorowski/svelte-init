@@ -22,7 +22,7 @@
 
 ## Features
 
--   It just works, import one file and You're ready to go
+-   It just works, import one file and You're ready to go :)
 -   Written fully in [TypeScript](https://typescriptlang.org/)
 -   Basic color configuration using css variables
 -   No third-party dependency usage
@@ -57,6 +57,11 @@ document.body.style.setProperty()
 -   [usePagination](https://github.com/mpiorowski/svelte-init/blob/main/docs/FUNCTIONS.md#usePagination)
 -   [useClickOutside](https://github.com/mpiorowski/svelte-init/blob/main/docs/FUNCTIONS.md#useClickOutside)
 
+## Icons
+-   [avatarIcon](https://github.com/mpiorowski/svelte-init/blob/main/docs/ICONS.md)
+-   [githubIcon](https://github.com/mpiorowski/svelte-init/blob/main/docs/ICONS.md)
+-   [npmIcon](https://github.com/mpiorowski/svelte-init/blob/main/docs/ICONS.md)
+
 ## Instalation
 
 ```
@@ -69,9 +74,9 @@ import '@mpiorowski/svelte-init/styles.css';
 
 Import `styles.css` as soon as possible in Your app. If using sveltekit, you can import it in Your main `+layout.svelte`.
 
-## Config
+## Optional configuration
 
-In Your global css file (must be imported after `styles.css`) you can set any of the global variables and change the default color. List of all available variables:
+In Your global css file (must be imported after `styles.css` to override styles) you can set any of the global variables and change the default color. List of all available variables:
 
 ```
 :root {
