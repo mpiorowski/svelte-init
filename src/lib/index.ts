@@ -25,7 +25,7 @@ export { default as Toast } from './components/toast/toast.svelte';
 export { default as Tooltip } from './components/tooltip.svelte';
 
 // Functions
-export { useAccordion } from './functions/useAccordion';
+export { useAccordion, accordionReducer } from './functions/useAccordion';
 export { useClickOutside } from './functions/useClickOutside';
 export { usePagination } from './functions/usePagination';
 export { useMediaQuery } from './functions/useMediaQuery';
