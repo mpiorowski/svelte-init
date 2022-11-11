@@ -53,5 +53,10 @@
     />
 
     <h1>Input Simple</h1>
-    <InputSimple bind:value={input} placeholder="Input simple" />
+    <InputSimple
+        bind:value={input}
+        {disabled}
+        error={withError ? 'Field must not be empty' : ''}
+        placeholder="Input simple"
+    />
 </div>

@@ -10,6 +10,7 @@
         | 'date'
         | 'color' = 'text';
     export let disabled = false;
+    export let error = '';
 
     function typeAction(node: HTMLInputElement) {
         node.type = type;
@@ -20,7 +21,8 @@
     use:typeAction
     bind:value
     aria-label={placeholder}
-    {placeholder}
+    placeholder={error || placeholder}
+    class:error
     {disabled}
 />
 
@@ -50,7 +52,13 @@
         outline: 2px solid var(--input-focus);
     }
     input:disabled {
-        color: var(--input-disabled);
+        opacity: 0.5;
         cursor: not-allowed;
+    }
+    input.error::placeholder {
+        color: var(--input-error);
+    }
+    input.error {
+        outline: 2px solid var(--input-error);
     }
 </style>
