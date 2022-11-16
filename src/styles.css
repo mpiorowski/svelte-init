@@ -28,14 +28,16 @@
 
     --drawer-background: #434343;
 
-    --table-header: #434343;
-    --table-body: #595959;
-    --table-footer: #434343;
+    --modal-background: #434343;
 
     --dropdown-background: #595959;
 
     --tooltip-background: #595959;
     --tooltip-text: #ffffff;
+
+    --table-header: #434343;
+    --table-body: #595959;
+    --table-footer: #434343;
 
     --shadow: 0 0 0 0px #fff, 0 0 0 0px #fff, 0 1px 3px 0 rgb(0 0 0 / 0.1),
         0 1px 2px -1px rgb(0 0 0 / 0.1);

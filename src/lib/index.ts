@@ -1,5 +1,7 @@
 // Components
 export { default as Drawer } from './components/drawer/drawer.svelte';
+export { default as Modal } from './components/modal/modal.svelte';
+export { default as Confirmation } from './components/modal/confirmation.modal.svelte';
 export { default as Dropdown } from './components/dropdown.svelte';
 export { default as Button } from './components/form/button.svelte';
 export { default as Checkbox } from './components/form/checkbox.svelte';

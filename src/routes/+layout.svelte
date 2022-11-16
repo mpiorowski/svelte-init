@@ -45,6 +45,7 @@
         </a>
         <a href="/toast" class={url === '/toast' ? 'active' : ''}>Toast</a>
         <a href="/drawer" class={url === '/drawer' ? 'active' : ''}>Drawer</a>
+        <a href="/modal" class={url === '/modal' ? 'active' : ''}>Modal</a>
         <a href="/table" class={url === '/table' ? 'active' : ''}>Table</a>
         <a href="/spinner" class={url === '/spinner' ? 'active' : ''}>
             Spinner
