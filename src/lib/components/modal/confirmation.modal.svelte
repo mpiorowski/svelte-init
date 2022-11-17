@@ -5,8 +5,8 @@
     export let type: 'primary' | 'ghost' | 'error' = 'error';
     export let action: () => void;
     export let btnText: string;
-    export let submitText = 'Confirm';
-    export let cancelText = 'Cancel';
+    export let confirmText = 'common.confirm';
+    export let cancelText = 'common.cancel';
 
     let isOpen = false;
 </script>
@@ -21,6 +21,6 @@
         <Button on:click={() => (isOpen = false)} type="ghost">
             {cancelText}
         </Button>
-        <Button on:click={action}>{submitText}</Button>
+        <Button on:click={action}>{confirmText}</Button>
     </svelte:fragment>
 </Modal>
