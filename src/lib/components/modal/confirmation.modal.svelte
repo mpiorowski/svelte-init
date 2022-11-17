@@ -4,18 +4,19 @@
     export let size: 'sm' | 'md' | 'lg' = 'md';
     export let type: 'primary' | 'ghost' | 'error' = 'error';
     export let action: () => void;
-    export let btnText: string;
     export let confirmText = 'common.confirm';
     export let cancelText = 'common.cancel';
 
     let isOpen = false;
 </script>
 
-<Button on:click={() => (isOpen = true)} {type}>{btnText}</Button>
+<Button on:click={() => (isOpen = true)} {type}>
+        <slot name="button" />
+</Button>
 
 <Modal {isOpen} onClose={() => (isOpen = false)} {size}>
     <svelte:fragment slot="content">
-        <slot />
+        <slot name="content" />
     </svelte:fragment>
     <svelte:fragment slot="footer">
         <Button on:click={() => (isOpen = false)} type="ghost">

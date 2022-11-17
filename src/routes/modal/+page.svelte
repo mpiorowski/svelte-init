@@ -31,12 +31,16 @@
     <h2>Confirmation modal</h2>
     <Confirmation
         {size}
-        btnText="Delete"
         action={() => {
             alert('Confirmed');
         }}
     >
+    <svelte:fragment slot="button">
+        Open confirmation modal
+    </svelte:fragment>
+    <svelte:fragment slot="content">
         <h2>Confirmation</h2>
         <p>Confirmation content</p>
+    </svelte:fragment>
     </Confirmation>
 </div>
