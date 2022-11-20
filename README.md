@@ -108,6 +108,8 @@ In Your global css file (must be imported after `styles.css` to override styles)
 
   --drawer-background: #434343;
 
+  --modal-background: #434343;
+
   --table-header: #434343;
   --table-body: #595959;
   --table-footer: #434343;

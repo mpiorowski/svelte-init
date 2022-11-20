@@ -12,9 +12,7 @@
 
 <!-- Dropdown button -->
 <div use:useClickOutside={onClickOutside} class="dropdown">
-    <div class="dropdown-btn">
-        <slot name="button" />
-    </div>
+    <slot name="button" />
     <!-- Dropdown content -->
     {#if isOpen}
         <div
