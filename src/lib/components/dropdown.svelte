@@ -4,7 +4,7 @@
     import { fade } from 'svelte/transition';
 
     export let position: 'left' | 'right' | 'center' = 'right';
-    let isOpen = false;
+    export let isOpen = false;
 </script>
 
 <!-- Dropdown button -->
