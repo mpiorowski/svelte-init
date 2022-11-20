@@ -3,7 +3,7 @@
 
     export let size: 'sm' | 'md' | 'lg' = 'md';
     export let actionBtn: 'primary' | 'ghost' | 'error' = 'error';
-    export let confirmBtm: 'primary' | 'ghost' | 'error' = 'error';
+    export let confirmBtn: 'primary' | 'ghost' | 'error' = 'error';
     export let action: () => Promise<void> | void;
     export let confirmText = 'Confirm';
     export let cancelText = 'Cancel';
@@ -31,7 +31,7 @@
                 loading = false;
                 isOpen = false;
             }}
-            type={confirmBtm}
+            type={confirmBtn}
             {loading}
         >
             {confirmText}

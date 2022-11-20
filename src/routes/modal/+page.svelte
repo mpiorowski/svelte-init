@@ -34,13 +34,15 @@
         action={() => {
             alert('Confirmed');
         }}
+        actionBtn="primary"
+        cancelText="Cancel"
+        confirmBtn="error"
+        confirmText="Confirm"
     >
-    <svelte:fragment slot="button">
-        Open confirmation modal
-    </svelte:fragment>
-    <svelte:fragment slot="content">
-        <h2>Confirmation</h2>
-        <p>Confirmation content</p>
-    </svelte:fragment>
+        <svelte:fragment slot="button">Open confirmation modal</svelte:fragment>
+        <svelte:fragment slot="content">
+            <h2>Confirmation</h2>
+            <p>Confirmation content</p>
+        </svelte:fragment>
     </Confirmation>
 </div>
