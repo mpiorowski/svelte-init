@@ -44,7 +44,7 @@
     }
     .modal {
         position: fixed;
-        width: 100%;
+        width: calc(100% - 2rem);
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
