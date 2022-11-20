@@ -11,21 +11,34 @@ import { Dropdown } from "@mpiorowski/svelte-init";
 ```
 <script lang="ts">
   import { Button, Dropdown } from "@mpiorowski/svelte-init";
+
+  let isOpen = false;
 </script>
 
-<Dropdown position="left">
+<Dropdown
+    position="left"
+    {isOpen}
+    onClickOutside={() => {
+        isOpen = false;
+    }}
+>
   <svelte:fragment slot="button">
     <Button type="ghost">Dropdown</Button>
   </svelte:fragment>
   <svelte:fragment slot="content">
-    <div>
-      <p>email1@gmail.com</p>
-      <p>email2@gmail.com</p>
-    </div>
+    <button 
+        on:click={() => {
+            isOpen = false;
+        }}
+    >
+        email@gmail.com
+    </button>
   </svelte:fragment>
 </Dropdown>
 ```
 
-| Prop     | Values                    | Default |
-| -------- | ------------------------- | ------- |
-| position | `left`, `right`, `center` | right   |
+| Prop           | Values                    | Default   |
+| -------------- | ------------------------- | --------- |
+| isOpen         | `boolean`                 |           |
+| onClickOutside | () => void                | undefined |
+| position       | `left`, `right`, `center` | right     |
