@@ -6,6 +6,7 @@
     export let disabled = false;
     export let full = true;
     export let form = '';
+    export let link = false;
 </script>
 
 <button
@@ -13,7 +14,7 @@
     {form}
     on:click
     type={form ? 'submit' : 'button'}
-    class={type + (full ? ' full' : '')}
+    class={type + (full ? ' full' : '') + (link ? ' link' : '')}
     disabled={disabled || loading}
     class:loading
 >
@@ -77,7 +78,6 @@
     button.error:focus {
         outline: 2px solid var(--btn-error-focus);
     }
-
     button.ghost {
         background-color: var(--btn-ghost);
     }
@@ -86,5 +86,31 @@
     }
     button.ghost:focus {
         outline: 2px solid var(--btn-ghost-focus);
+    }
+    button.link {
+        background-color: transparent;
+        box-shadow: none;
+    }
+    button.link:hover:not(:disabled) {
+        background-color: transparent;
+        box-shadow: none;
+    }
+    button.link.primary {
+        color: var(--btn-primary);
+    }
+    button.link.primary:hover:not(:disabled) {
+        color: var(--btn-primary-hover);
+    }
+    button.link.error {
+        color: var(--btn-error);
+    }
+    button.link.error:hover:not(:disabled) {
+        color: var(--btn-error-hover);
+    }
+    button.link.ghost {
+        color: var(--btn-ghost);
+    }
+    button.link.ghost:hover:not(:disabled) {
+        color: var(--btn-ghost-hover);
     }
 </style>
