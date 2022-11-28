@@ -15,7 +15,7 @@
     },
     "homepage": "https://svelte-init.vercel.app",
     "license": "MIT",
-    "version": "1.7.1",
+    "version": "1.8.0",
     "type": "module",
     "scripts": {
         "start": "vite dev",
