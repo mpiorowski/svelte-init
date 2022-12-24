@@ -3,27 +3,26 @@
     export let onChange: (() => void) | undefined = undefined;
 </script>
 
-<label class="checkbox">
+<label>
     <input bind:checked on:change={onChange} type="checkbox" />
     <slot />
 </label>
 
 <style>
-    .checkbox {
+    label {
         display: flex;
         align-items: center;
         gap: 0.5rem;
         user-select: none;
         font-weight: bold;
     }
-    .checkbox:hover {
+    label:hover {
         cursor: pointer;
     }
     input {
         width: 1.25rem;
         height: 1.25rem;
         border-radius: 0.25rem;
-        accent-color: var(--accent);
     }
     input:hover {
         cursor: pointer;

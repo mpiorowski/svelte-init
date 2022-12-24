@@ -36,10 +36,3 @@ export const removeToast = (id: string): void => {
         return state.filter((t) => t.id !== id);
     });
 };
-
-export const toastSave = (): void =>
-    toast('common.saved', ToastType.SUCCESS, 3000);
-export const toastError = (): void =>
-    toast('common.error', ToastType.ERROR, 3000);
-export const toastDelete = (): void =>
-    toast('common.deleted', ToastType.WARNING, 3000);

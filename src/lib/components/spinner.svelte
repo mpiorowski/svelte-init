@@ -1,5 +1,5 @@
 <script lang="ts">
-    export let size = 20;
+    export let size = 40;
     export let center = false;
     export let visible = true;
 </script>

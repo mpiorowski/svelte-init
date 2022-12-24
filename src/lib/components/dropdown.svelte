@@ -10,14 +10,14 @@
     };
 </script>
 
-<!-- Dropdown button -->
-<div use:useClickOutside={onClickOutside} class="dropdown">
+<div use:useClickOutside={onClickOutside} class="dropdown-container">
+    <!-- Dropdown button -->
     <slot name="button" />
     <!-- Dropdown content -->
     {#if isOpen}
         <div
             transition:fade={{ duration: 100 }}
-            class="dropdown-content {position}"
+            class="dropdown {position}"
             class:position
         >
             <slot name="content" />
@@ -26,19 +26,16 @@
 </div>
 
 <style>
-    .dropdown {
+    .dropdown-container {
         position: relative;
     }
-    .dropdown-content {
+    .dropdown {
         display: flex;
         width: fit-content;
         z-index: 10;
         margin-top: 0.5rem /* 8px */;
         border-radius: 0.5rem;
         position: absolute;
-
-        box-shadow: var(--shadow);
-        background-color: var(--dropdown-background);
     }
     .right {
         right: 0;

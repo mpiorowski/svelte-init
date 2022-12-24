@@ -7,7 +7,7 @@
 <div
     data-tooltip={tooltip}
     style={`--tooltip-move:${move}rem`}
-    class={position}
+    class={'tooltip ' + position}
 >
     <slot />
 </div>
@@ -25,7 +25,6 @@
         visibility: hidden;
         opacity: 0;
         pointer-events: none;
-        transition: all 0.2s ease-in-out;
     }
 
     [data-tooltip]::before {
@@ -40,10 +39,6 @@
         font-size: 0.875rem /* 14px */;
         line-height: 1.25rem /* 20px */;
         padding: 0.25rem 0.5rem;
-
-        background-color: var(--tooltip-background);
-        color: var(--tooltip-text);
-        box-shadow: var(--shadow);
     }
 
     /* TODO - add arrow */

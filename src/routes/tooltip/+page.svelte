@@ -24,14 +24,13 @@
 
 <style>
     .tooltip-container {
-        color: black;
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid gray;
-        background-color: aliceblue;
         border-radius: 0.5rem;
         width: 5rem;
         height: 2.5rem;
+
+        @apply bg-gray-100 text-gray-700;
     }
 </style>

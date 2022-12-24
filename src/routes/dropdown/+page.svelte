@@ -68,7 +68,7 @@
         padding: 0.5rem;
     }
     .logout:hover {
-        background-color: #969393;
+        background-color: #f2f2f2;
         cursor: pointer;
     }
 </style>

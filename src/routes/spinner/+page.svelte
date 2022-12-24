@@ -10,7 +10,7 @@
 <div in:fade class="content">
     <h1>Spinner</h1>
 
-    <Checkbox bind:checked={center}>Center</Checkbox>
+    <Checkbox bind:checked={center}>Center screen</Checkbox>
     <Checkbox bind:checked={visible}>Visible</Checkbox>
     <InputNumber bind:value={size} label="Size" max={200} min={1} />
 

@@ -1,28 +1,32 @@
 <script lang="ts">
     import { fade } from 'svelte/transition';
-    import {
-        Button,
-        Input,
-        InputNumber,
-        Select,
-        toast,
-        toastDelete,
-        toastError,
-        toastSave,
-        ToastType,
-    } from '$lib';
+    import { Button, Input, InputNumber, Select, toast, ToastType } from '$lib';
 
     let toastMsg = '';
     let toastDuration = 3000;
     let toastType = ToastType.INFO;
+
+    const toastSave = () => {
+        toast('Saved', ToastType.SUCCESS);
+    };
+    function toastError() {
+        toast('Error', ToastType.ERROR);
+    }
+    function toastInfo() {
+        toast('Info', ToastType.INFO);
+    }
+    function toastWarning() {
+        toast('Warning', ToastType.WARNING);
+    }
 </script>
 
 <div in:fade class="content">
-    <h1>Predefined Toast</h1>
+    <h1>Demo Toast</h1>
     <div class="flex-gap">
-        <Button on:click={toastSave}>Toast save</Button>
+        <Button on:click={toastInfo}>Toast info</Button>
+        <Button on:click={toastSave}>Toast success</Button>
         <Button on:click={toastError}>Toast error</Button>
-        <Button on:click={toastDelete}>Toast delete</Button>
+        <Button on:click={toastWarning}>Toast warning</Button>
     </div>
 
     <h1>Custom Toast</h1>

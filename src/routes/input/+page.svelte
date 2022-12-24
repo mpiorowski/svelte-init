@@ -1,8 +1,9 @@
 <script lang="ts">
     import { fade } from 'svelte/transition';
-    import { Checkbox, Input, InputNumber, InputSimple, Textarea } from '$lib';
+    import { Checkbox, Input, InputNumber, InputSimple, Select, Textarea } from '$lib';
 
     let input = '';
+    let select = '';
     let textarea = '';
     let inputNumber = 0;
     let inputDate = 0;
@@ -42,6 +43,28 @@
         label="Input number"
     />
 
+    <h1>Input Simple</h1>
+    <InputSimple
+        bind:value={input}
+        {disabled}
+        error={withError ? 'Field must not be empty' : ''}
+        placeholder="Input simple"
+    />
+
+    <h1>Select</h1>
+
+    <Select
+        bind:value={select}
+        {required}
+        {disabled}
+        error={withError ? 'Field must not be empty' : ''}
+        label="Select"
+    >
+        <option disabled value="">Choose one ...</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+    </Select>
     <h1>Textarea</h1>
     <Textarea
         bind:value={textarea}
@@ -52,11 +75,4 @@
         placeholder="Placeholder"
     />
 
-    <h1>Input Simple</h1>
-    <InputSimple
-        bind:value={input}
-        {disabled}
-        error={withError ? 'Field must not be empty' : ''}
-        placeholder="Input simple"
-    />
 </div>

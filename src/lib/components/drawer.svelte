@@ -3,7 +3,6 @@
 
     export let onClose: () => void;
     export let isOpen: boolean;
-    export let title = '';
 
     $: document.body.classList.toggle('no-scroll', isOpen);
 </script>
@@ -18,12 +17,9 @@
     />
 
     <div class="drawer" transition:fly={{ duration: 400, x: 400 }}>
-        <div class="drawer-header">
-            <h2>{title}</h2>
-            <button on:click={onClose} aria-label="close" class="close-btn">
-                &times;
-            </button>
-        </div>
+        <button on:click={onClose} aria-label="close" class="drawer-close">
+            &times;
+        </button>
         <div class="drawer-content">
             <slot name="content" />
         </div>
@@ -45,7 +41,7 @@
     }
     .drawer {
         display: grid;
-        grid-template-rows: 60px 1fr auto;
+        grid-template-rows: 1fr auto;
         height: 100%; /* 100% Full-height */
         width: 100%;
         max-width: 600px; /* 0 width - change this with JavaScript */
@@ -53,15 +49,6 @@
         z-index: 999; /* Stay on top */
         top: 0; /* Stay at the top */
         right: 0;
-
-        background-color: var(--drawer-background);
-    }
-    .drawer-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem;
-        font-weight: bold;
     }
     .drawer-content {
         overflow: auto;
@@ -70,14 +57,15 @@
     .drawer-footer {
         display: flex;
         justify-content: flex-end;
-        align-items: center;
-
         gap: 0.5rem;
         padding: 1rem;
     }
-    .close-btn {
+    .drawer-close {
         font-weight: bold;
+        position: absolute;
         font-size: 1.875rem /* 30px */;
-        line-height: 2.25rem /* 36px */;
+        line-height: 1.5rem;
+        top: 0.8rem;
+        right: 0.8rem;
     }
 </style>

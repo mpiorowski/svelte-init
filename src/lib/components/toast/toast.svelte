@@ -2,9 +2,6 @@
     import { backOut } from 'svelte/easing';
     import { fade, fly } from 'svelte/transition';
     import { notifications, removeToast } from './toast.helper';
-    export let saveMsg = 'Saved';
-    export let errorMsg = 'Error';
-    export let deleteMsg = 'Deleted';
 </script>
 
 <div class="notifications">
@@ -22,15 +19,7 @@
             class={['toast', notification.type].join(' ')}
         >
             <div class="toast-text">
-                {#if notification.message === 'common.saved'}
-                    {saveMsg}
-                {:else if notification.message === 'common.error'}
-                    {errorMsg}
-                {:else if notification.message === 'common.deleted'}
-                    {deleteMsg}
-                {:else}
-                    {notification.message}
-                {/if}
+                {notification.message}
             </div>
             <div
                 class="close"
@@ -66,7 +55,6 @@
         text-align: left;
         margin-bottom: 0.5rem;
         border-radius: 0.25rem;
-        box-shadow: var(--shadow);
     }
     .close {
         cursor: pointer;
@@ -77,7 +65,6 @@
         font-size: 1.25rem /* 18px */;
         height: 2.5rem;
         width: 2.5rem;
-        color: var(--toast-text);
     }
     .close:hover {
         opacity: 0.5;
@@ -88,24 +75,5 @@
         font-size: 1rem;
         cursor: default;
         padding-left: 1rem;
-        color: var(--toast-text);
-    }
-    .info .toast-text {
-        color: var(--toast-info-text);
-    }
-    .info .close {
-        color: var(--toast-info-text);
-    }
-    .success {
-        background-color: var(--toast-success);
-    }
-    .error {
-        background-color: var(--toast-error);
-    }
-    .info {
-        background-color: var(--toast-info);
-    }
-    .warning {
-        background-color: var(--toast-warning);
     }
 </style>

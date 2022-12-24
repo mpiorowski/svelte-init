@@ -19,7 +19,7 @@
     }
 </script>
 
-<label class="input">
+<label>
     {label}
     {#if required}<span class="text-error">*</span>{/if}
     <input
@@ -31,6 +31,7 @@
         {max}
         {min}
         {placeholder}
+        class="input"
         class:error
         class:small
     />
@@ -42,7 +43,7 @@
 </label>
 
 <style>
-    .input {
+    label {
         display: block;
         font-size: 0.875rem /* 14px */;
         line-height: 1.25rem /* 20px */;
@@ -57,23 +58,11 @@
         padding-left: 0.8rem;
         padding-right: 0.8rem;
         border-radius: 0.5rem;
-        transition: all 0.1s ease-in-out;
-
-        background-color: var(--input-primary);
-        outline: 0px solid var(--input-primary);
-
-        box-shadow: var(--shadow);
     }
     input.small {
         height: 1.75rem;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
-    }
-    input.error {
-        outline: 2px solid var(--input-error);
-    }
-    input:focus {
-        outline: 2px solid var(--input-focus);
     }
     input:disabled {
         opacity: 0.5;
@@ -83,6 +72,5 @@
         height: 1.25rem;
         margin-top: 0.25rem;
         font-weight: bold;
-        color: var(--input-error);
     }
 </style>

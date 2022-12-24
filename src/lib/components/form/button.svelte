@@ -14,7 +14,7 @@
     {form}
     on:click
     type={form ? 'submit' : 'button'}
-    class={type + (full ? ' full' : '') + (link ? ' link' : '')}
+    class={'btn ' + type + (full ? ' full' : '') + (link ? ' link' : '')}
     disabled={disabled || loading}
     class:loading
 >
@@ -37,18 +37,12 @@
         height: 2.25rem;
         padding-left: 1rem;
         padding-right: 1rem;
-
         user-select: none;
         font-weight: bold;
         border-radius: 0.5rem;
         font-size: 0.875rem;
         line-height: 1.25rem;
 
-        transition: all 0.1s ease-in-out;
-
-        color: var(--btn-text);
-        outline: 0px solid var(--btn-primary);
-        box-shadow: var(--shadow);
     }
     .spinner {
         height: 1.25rem;
@@ -59,34 +53,6 @@
         opacity: 0.5;
         cursor: not-allowed;
     }
-    button.primary {
-        background-color: var(--btn-primary);
-    }
-    button.primary:hover:not(:disabled) {
-        background-color: var(--btn-primary-hover);
-    }
-    button.primary:focus {
-        outline: 2px solid var(--btn-primary-focus);
-    }
-
-    button.error {
-        background-color: var(--btn-error);
-    }
-    button.error:hover:not(:disabled) {
-        background-color: var(--btn-error-hover);
-    }
-    button.error:focus {
-        outline: 2px solid var(--btn-error-focus);
-    }
-    button.ghost {
-        background-color: var(--btn-ghost);
-    }
-    button.ghost:hover:not(:disabled) {
-        background-color: var(--btn-ghost-hover);
-    }
-    button.ghost:focus {
-        outline: 2px solid var(--btn-ghost-focus);
-    }
     button.link {
         background-color: transparent;
         box-shadow: none;
@@ -94,23 +60,5 @@
     button.link:hover:not(:disabled) {
         background-color: transparent;
         box-shadow: none;
-    }
-    button.link.primary {
-        color: var(--btn-primary);
-    }
-    button.link.primary:hover:not(:disabled) {
-        color: var(--btn-primary-hover);
-    }
-    button.link.error {
-        color: var(--btn-error);
-    }
-    button.link.error:hover:not(:disabled) {
-        color: var(--btn-error-hover);
-    }
-    button.link.ghost {
-        color: var(--btn-ghost);
-    }
-    button.link.ghost:hover:not(:disabled) {
-        color: var(--btn-ghost-hover);
     }
 </style>

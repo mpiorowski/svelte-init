@@ -13,26 +13,19 @@
         on:keypress={onClose}
     />
     <div class={`modal ${size}`} transition:fade={{ duration: 200 }}>
-        <div class="content">
+        <button on:click={onClose} aria-label="close" class="modal-close">
+            &times;
+        </button>
+        <div class="modal-content">
             <slot name="content" />
         </div>
-        <div class="footer">
+        <div class="modal-footer">
             <slot name="footer" />
         </div>
     </div>
 {/if}
 
 <style>
-    .content {
-        padding: 1rem;
-        padding-bottom: 0;
-    }
-    .footer {
-        padding: 1rem;
-        display: flex;
-        gap: 1rem;
-        justify-content: flex-end;
-    }
     .modal-overlay {
         position: fixed;
         top: 0;
@@ -48,7 +41,6 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: var(--modal-background);
         z-index: 1001;
         border-radius: 0.5rem;
     }
@@ -60,5 +52,23 @@
     }
     .modal.lg {
         max-width: 800px;
+    }
+    .modal-content {
+        padding: 1rem;
+        padding-bottom: 0;
+    }
+    .modal-footer {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .modal-close {
+        font-weight: bold;
+        position: absolute;
+        font-size: 1.875rem /* 30px */;
+        line-height: 1.5rem;
+        top: 0.8rem;
+        right: 0.8rem;
     }
 </style>

@@ -1,7 +1,76 @@
-@import './styles.css';
-:root {
-    --background: #262626;
-    --text: #ffffff;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .input {
+        @apply shadow transition bg-white border border-gray-300 hover:border-gray-400 focus:ring focus:ring-gray-200 placeholder-gray-300;
+    }
+    .input.error {
+        @apply border border-red-500 placeholder-red-500;
+    }
+    .text-error {
+        @apply text-red-500;
+    }
+    input[type="checkbox"], input[type="radio"] {
+        @apply accent-slate-600;
+    }
+    .btn {
+        @apply shadow transition;
+    }
+    .btn.primary {
+        @apply bg-blue-500 text-white hover:bg-blue-600 focus:ring-blue-600 focus:ring;
+    }
+    .btn.error {
+        @apply bg-red-500 text-white hover:bg-red-600 focus:ring-red-600 focus:ring;
+    }
+    .btn.ghost {
+        @apply bg-gray-200 text-gray-600 hover:bg-gray-300 focus:ring-gray-300 focus:ring;
+    }
+    .btn.primary.link {
+        @apply text-blue-500 hover:underline hover:bg-white;
+    }
+    .btn.error.link {
+        @apply text-red-500 hover:underline hover:bg-white;
+    }
+    .btn.ghost.link {
+        @apply text-gray-600 hover:underline hover:bg-white;
+    }
+    .toast {
+        @apply shadow-md;
+    }
+    .toast.success {
+        @apply bg-green-500 text-white;
+    }
+    .toast.error {
+        @apply bg-red-500 text-white;
+    }
+    .toast.info {
+        @apply bg-blue-500 text-white;
+    }
+    .toast.warning {
+        @apply bg-yellow-500 text-white;
+    }
+    .drawer, .modal {
+        @apply shadow-md bg-gray-100;
+    }
+
+
+
+    .dropdown {
+        @apply shadow transition bg-white border border-gray-300;
+    }
+    .tooltip {
+        @apply shadow transition bg-gray-900 text-gray-100;
+    }
+}
+
+:focus {
+    outline: none;
+}
+
+.no-scroll {
+    overflow: hidden;
 }
 
 body {
@@ -9,8 +78,6 @@ body {
     padding: 0;
     font-family: sans-serif;
     font-size: 16px;
-    background-color: var(--background);
-    color: var(--text);
 }
 
 h1 {
