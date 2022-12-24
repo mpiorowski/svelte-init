@@ -27,7 +27,7 @@
         width: fit-content;
         white-space: nowrap;
         text-align: center;
-        padding: 0.5rem;
+        padding: 0.5rem 1rem;
         border-radius: 6px;
         position: absolute;
         z-index: 1;
