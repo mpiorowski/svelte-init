@@ -6,7 +6,7 @@
     .input {
         @apply shadow transition bg-white border border-gray-300 hover:border-gray-400 focus:ring focus:ring-gray-200 placeholder-gray-300;
     }
-    .input-error {
+    .input.error {
         @apply border border-red-500 placeholder-red-500;
     }
     .text-error {
