@@ -64,6 +64,13 @@ npm install @mpiorowski/svelte-init
 ```
 Inside Your app.css import color configuration:
 ```
+:focus {
+    outline: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
 @layer components {
     .input {
         @apply shadow transition bg-white border border-gray-300 hover:border-gray-400 focus:ring focus:ring-gray-200 placeholder-gray-300;
