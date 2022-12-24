@@ -14,7 +14,7 @@
     {form}
     on:click
     type={form ? 'submit' : 'button'}
-    class={'btn ' + type + (full ? ' full' : '') + (link ? ' link' : '')}
+    class={'button ' + type + (full ? ' full ' : '') + (link ? ' link ' : '')}
     disabled={disabled || loading}
     class:loading
 >
