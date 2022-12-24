@@ -24,7 +24,7 @@
 
 -   Working out of the box most useful components, without any additional configuration.
 -   Written fully in [TypeScript](https://typescriptlang.org/)
--   Using [Tailwind](https://tailwindcss.com) for very easy colors management.
+-   Using [Tailwind](https://tailwindcss.com) for styling.
 -   No dark / light theme included, but can be easly achived using tailwind theme.
 
 ## Components
