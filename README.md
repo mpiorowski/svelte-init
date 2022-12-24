@@ -71,6 +71,7 @@ Inside Your app.css import color configuration:
 .no-scroll {
     overflow: hidden;
 }
+
 @layer components {
     .input {
         @apply shadow transition bg-white border border-gray-300 hover:border-gray-400 focus:ring focus:ring-gray-200 placeholder-gray-300;
@@ -84,25 +85,25 @@ Inside Your app.css import color configuration:
     input[type="checkbox"], input[type="radio"] {
         @apply accent-slate-600;
     }
-    .btn {
+    .button {
         @apply shadow transition;
     }
-    .btn.primary {
+    .button.primary {
         @apply bg-blue-500 text-white hover:bg-blue-600 focus:ring-blue-600 focus:ring;
     }
-    .btn.error {
+    .button.error {
         @apply bg-red-500 text-white hover:bg-red-600 focus:ring-red-600 focus:ring;
     }
-    .btn.ghost {
+    .button.ghost {
         @apply bg-gray-200 text-gray-600 hover:bg-gray-300 focus:ring-gray-300 focus:ring;
     }
-    .btn.primary.link {
+    .button.primary.link {
         @apply text-blue-500 hover:underline hover:bg-white;
     }
-    .btn.error.link {
+    .button.error.link {
         @apply text-red-500 hover:underline hover:bg-white;
     }
-    .btn.ghost.link {
+    .button.ghost.link {
         @apply text-gray-600 hover:underline hover:bg-white;
     }
     .toast {
