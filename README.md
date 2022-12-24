@@ -54,7 +54,7 @@
 
 ## Prerequisites
 
-This library is dependend on styling that tailwind provides:
+This library depends on styling that tailwind provides:
 https://tailwindcss.com/docs/guides/sveltekit
 
 ## Instalation
