@@ -30,7 +30,6 @@
         border-radius: 0.5rem;
         width: 5rem;
         height: 2.5rem;
-
-        @apply bg-gray-100 text-gray-700;
+        @apply bg-gray-200;
     }
 </style>

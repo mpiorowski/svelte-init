@@ -4,87 +4,59 @@
     export let move = 0;
 </script>
 
-<div
-    data-tooltip={tooltip}
-    style={`--tooltip-move:${move}rem`}
-    class={'tooltip ' + position}
->
+<div class="tooltip">
     <slot />
+    <span
+        style={`--tooltip-move:${move}rem`}
+        class={'tooltip-text ' + position}
+    >
+        {tooltip}
+    </span>
 </div>
 
 <style>
-    [data-tooltip] {
+    /* Tooltip container */
+    .tooltip {
         position: relative;
-        display: block;
         width: fit-content;
     }
 
-    [data-tooltip]::before,
-    [data-tooltip]::after {
-        z-index: 100;
+    /* Tooltip text */
+    .tooltip .tooltip-text {
         visibility: hidden;
-        opacity: 0;
-        pointer-events: none;
-    }
-
-    [data-tooltip]::before {
-        content: attr(data-tooltip);
-
-        z-index: 100;
-        position: absolute;
         width: fit-content;
         white-space: nowrap;
         text-align: center;
-        border-radius: 0.5rem;
-        font-size: 0.875rem /* 14px */;
-        line-height: 1.25rem /* 20px */;
-        padding: 0.25rem 0.5rem;
+        padding: 0.5rem;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 1;
+        opacity: 0;
+        transition: opacity 0.3s;
     }
 
-    /* TODO - add arrow */
-    /* [data-tooltip]:after {
-    position: absolute;
-    top: auto;
-    left: calc(100% + 10px);
-    width: 0;
-    border-top: 5px solid #000;
-    border-top: 5px solid hsla(0, 0%, 20%, 0.9);
-    border-right: 5px solid transparent;
-    border-left: 5px solid transparent;
-    content: ' ';
-    font-size: 0;
-    line-height: 0;
-  } */
-
-    [data-tooltip]:hover::before,
-    [data-tooltip]:hover::after {
-        z-index: 40;
+    /* Show the tooltip text when you mouse over the tooltip container */
+    .tooltip:hover .tooltip-text {
         visibility: visible;
         opacity: 1;
-        /* transform: translate(-50%, 0); */
-    }
-    [data-tooltip='false']:hover::before,
-    [data-tooltip='false']:hover::after {
-        visibility: hidden;
-        opacity: 0;
     }
 
-    .top::before {
+    .tooltip-text.top {
         left: 50%;
         transform: translateX(-50%);
         bottom: calc(100% + var(--tooltip-move));
     }
-    .bottom::before {
+    .tooltip-text.bottom {
         left: 50%;
         transform: translateX(-50%);
         top: calc(100% + var(--tooltip-move));
     }
-    .right::before {
+    .tooltip-text.right {
         top: 50%;
         transform: translateY(-50%);
         left: calc(100% + var(--tooltip-move));
     }
-    .left::before {
+    .tooltip-text.left {
         top: 50%;
         transform: translateY(-50%);
         right: calc(100% + var(--tooltip-move));
