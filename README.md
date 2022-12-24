@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  A low-overhead Svelte UI library with the basic, most useful components, to help with the initial development.
+  A low-overhead Svelte UI library with the basic, most useful components and functions, to help with the initial development.
 </p>
 
 <div align="center">
@@ -22,16 +22,10 @@
 
 ## Features
 
--   It just works, import one file and You're ready to go :)
+-   Working out of the box most useful components, without any additional configuration.
 -   Written fully in [TypeScript](https://typescriptlang.org/)
--   Basic color configuration using css variables
--   No third-party dependency usage
--   Using [tailwind preflight](https://tailwindcss.com/docs/preflight) css setup
--   No dark / light theme included, but can be easly achived using:
-
-```
-document.body.style.setProperty()
-```
+-   Using [Tailwind](https://tailwindcss.com) for styling.
+-   No dark / light theme included, but can be easly achived using tailwind theme.
 
 ## Components
 
@@ -48,7 +42,6 @@ document.body.style.setProperty()
 -   [Modal](https://github.com/mpiorowski/svelte-init/blob/main/docs/MODAL.md)
 -   [Dropdown](https://github.com/mpiorowski/svelte-init/blob/main/docs/DROPDOWN.md)
 -   [Tooltip](https://github.com/mpiorowski/svelte-init/blob/main/docs/TOOLTIP.md)
--   [Table](https://github.com/mpiorowski/svelte-init/blob/main/docs/TABLE.md)
 -   [Spinner](https://github.com/mpiorowski/svelte-init/blob/main/docs/SPINNER.md)
 
 ## Functions
@@ -58,67 +51,76 @@ document.body.style.setProperty()
 -   [usePagination](https://github.com/mpiorowski/svelte-init/blob/main/docs/FUNCTIONS.md#usePagination)
 -   [useClickOutside](https://github.com/mpiorowski/svelte-init/blob/main/docs/FUNCTIONS.md#useClickOutside)
 
-## Icons
--   [avatarIcon](https://github.com/mpiorowski/svelte-init/blob/main/docs/ICONS.md)
--   [githubIcon](https://github.com/mpiorowski/svelte-init/blob/main/docs/ICONS.md)
--   [npmIcon](https://github.com/mpiorowski/svelte-init/blob/main/docs/ICONS.md)
+
+## Prerequisites
+
+This library is dependend on styling that tailwind provides:
+https://tailwindcss.com/docs/guides/sveltekit
 
 ## Instalation
 
 ```
 npm install @mpiorowski/svelte-init
 ```
-
+Inside Your app.css import color configuration:
 ```
-import '@mpiorowski/svelte-init/styles.css';
-```
-
-Import `styles.css` as soon as possible in Your app. If using sveltekit, you can import it in Your main `+layout.svelte`.
-
-## Optional configuration
-
-In Your global css file (must be imported after `styles.css` to override styles) you can set any of the global variables and change the default color. List of all available variables:
-
-```
-:root {
-  --btn-text: #ffffff;
-  --btn-primary: #006d75;
-  --btn-primary-hover: #08979c;
-  --btn-primary-focus: #13c2c2;
-  --btn-error: #a8071a;
-  --btn-error-hover: #cf1322;
-  --btn-error-focus: #f5222d;
-  --btn-ghost: #8c8c8c;
-  --btn-ghost-hover: #bfbfbf;
-  --btn-ghost-focus: #d9d9d9;
-
-  --input-primary: #595959;
-  --input-focus: #bfbfbf;
-  --input-error: #f5222d;
-  --input-placeholder: #bfbfbf;
-
-  --accent: #13c2c2;
-
-  --toast-text: #ffffff;
-  --toast-success: #237804;
-  --toast-error: #a8071a;
-  --toast-warning: #ad8b00;
-  --toast-info: #0050b3;
-  --toast-info-text: #ffffff;
-
-  --drawer-background: #434343;
-
-  --modal-background: #434343;
-
-  --table-header: #434343;
-  --table-body: #595959;
-  --table-footer: #434343;
-
-  --dropdown-background: #595959;
-
-  --tooltip-background: #595959;
-  --tooltip-text: #ffffff;
-
-  --shadow: 0 0 0 0px #fff, 0 0 0 0px #fff, 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+@layer components {
+    .input {
+        @apply shadow transition bg-white border border-gray-300 hover:border-gray-400 focus:ring focus:ring-gray-200 placeholder-gray-300;
+    }
+    .input.error {
+        @apply border border-red-500 placeholder-red-500;
+    }
+    .text-error {
+        @apply text-red-500;
+    }
+    input[type="checkbox"], input[type="radio"] {
+        @apply accent-slate-600;
+    }
+    .btn {
+        @apply shadow transition;
+    }
+    .btn.primary {
+        @apply bg-blue-500 text-white hover:bg-blue-600 focus:ring-blue-600 focus:ring;
+    }
+    .btn.error {
+        @apply bg-red-500 text-white hover:bg-red-600 focus:ring-red-600 focus:ring;
+    }
+    .btn.ghost {
+        @apply bg-gray-200 text-gray-600 hover:bg-gray-300 focus:ring-gray-300 focus:ring;
+    }
+    .btn.primary.link {
+        @apply text-blue-500 hover:underline hover:bg-white;
+    }
+    .btn.error.link {
+        @apply text-red-500 hover:underline hover:bg-white;
+    }
+    .btn.ghost.link {
+        @apply text-gray-600 hover:underline hover:bg-white;
+    }
+    .toast {
+        @apply shadow-md;
+    }
+    .toast.success {
+        @apply bg-green-500 text-white;
+    }
+    .toast.error {
+        @apply bg-red-500 text-white;
+    }
+    .toast.info {
+        @apply bg-blue-500 text-white;
+    }
+    .toast.warning {
+        @apply bg-yellow-500 text-white;
+    }
+    .drawer, .modal {
+        @apply shadow-md bg-gray-100;
+    }
+    .dropdown {
+        @apply shadow transition bg-white border border-gray-300;
+    }
+    .tooltip-text {
+        @apply shadow transition bg-gray-600 text-gray-200;
+    }
 }
 ```
