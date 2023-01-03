@@ -20,7 +20,7 @@
 >
     {#if loading}
         <div class="spinner">
-            <Spinner />
+            <Spinner size={20} />
         </div>
     {/if}
     <slot />
