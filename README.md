@@ -24,7 +24,7 @@
 
 -   Working out of the box most useful components, without any additional configuration.
 -   Written fully in [TypeScript](https://typescriptlang.org/)
--   Using [Tailwind](https://tailwindcss.com) for styling.
+-   Using [Tailwind](https://tailwindcss.com) for styling. But can be done with pure css also :).
 -   No dark / light theme included, but can be easly achived using tailwind theme.
 
 ## Components
@@ -51,18 +51,12 @@
 -   [usePagination](https://github.com/mpiorowski/svelte-init/blob/main/docs/FUNCTIONS.md#usePagination)
 -   [useClickOutside](https://github.com/mpiorowski/svelte-init/blob/main/docs/FUNCTIONS.md#useClickOutside)
 
-
-## Prerequisites
-
-This library depends on styling that tailwind provides:
-https://tailwindcss.com/docs/guides/sveltekit
-
 ## Instalation
 
 ```
 npm install @mpiorowski/svelte-init
 ```
-Inside Your app.css import color configuration:
+Inside Your main *.css file (imported in root layout) paste color/shadow configuration:
 ```
 :focus {
     outline: none;
@@ -72,63 +66,61 @@ Inside Your app.css import color configuration:
     overflow: hidden;
 }
 
-@layer components {
-    .input {
-        @apply shadow transition bg-white border border-gray-300 hover:border-gray-400 focus:ring focus:ring-gray-200 placeholder-gray-300;
-    }
-    .input.error {
-        @apply border border-red-500 placeholder-red-500;
-    }
-    .text-error {
-        @apply text-red-500;
-    }
-    input[type="checkbox"], input[type="radio"] {
-        @apply accent-slate-600;
-    }
-    .button {
-        @apply shadow transition;
-    }
-    .button.primary {
-        @apply bg-blue-500 text-white hover:bg-blue-600 focus:ring-blue-600 focus:ring;
-    }
-    .button.error {
-        @apply bg-red-500 text-white hover:bg-red-600 focus:ring-red-600 focus:ring;
-    }
-    .button.ghost {
-        @apply bg-gray-200 text-gray-600 hover:bg-gray-300 focus:ring-gray-300 focus:ring;
-    }
-    .button.primary.link {
-        @apply text-blue-500 hover:underline hover:bg-white;
-    }
-    .button.error.link {
-        @apply text-red-500 hover:underline hover:bg-white;
-    }
-    .button.ghost.link {
-        @apply text-gray-600 hover:underline hover:bg-white;
-    }
-    .toast {
-        @apply shadow-md;
-    }
-    .toast.success {
-        @apply bg-green-500 text-white;
-    }
-    .toast.error {
-        @apply bg-red-500 text-white;
-    }
-    .toast.info {
-        @apply bg-blue-500 text-white;
-    }
-    .toast.warning {
-        @apply bg-yellow-500 text-white;
-    }
-    .drawer, .modal {
-        @apply shadow-md bg-gray-100;
-    }
-    .dropdown {
-        @apply shadow transition bg-white border border-gray-300;
-    }
-    .tooltip-text {
-        @apply shadow transition bg-gray-600 text-gray-200;
-    }
+.input {
+    @apply shadow transition bg-white border border-gray-300 hover:border-gray-400 focus:ring focus:ring-gray-200 placeholder-gray-300;
+}
+.input.error {
+    @apply border border-red-500 placeholder-red-500;
+}
+.text-error {
+    @apply text-red-500;
+}
+input[type="checkbox"], input[type="radio"] {
+    @apply accent-slate-600;
+}
+.button {
+    @apply shadow transition;
+}
+.button.primary {
+    @apply bg-blue-500 text-white hover:bg-blue-600 focus:ring-blue-600 focus:ring;
+}
+.button.error {
+    @apply bg-red-500 text-white hover:bg-red-600 focus:ring-red-600 focus:ring;
+}
+.button.ghost {
+    @apply bg-gray-200 text-gray-600 hover:bg-gray-300 focus:ring-gray-300 focus:ring;
+}
+.button.primary.link {
+    @apply text-blue-500 hover:underline hover:bg-white;
+}
+.button.error.link {
+    @apply text-red-500 hover:underline hover:bg-white;
+}
+.button.ghost.link {
+    @apply text-gray-600 hover:underline hover:bg-white;
+}
+.toast {
+    @apply shadow-md;
+}
+.toast.success {
+    @apply bg-green-500 text-white;
+}
+.toast.error {
+    @apply bg-red-500 text-white;
+}
+.toast.info {
+    @apply bg-blue-500 text-white;
+}
+.toast.warning {
+    @apply bg-yellow-500 text-white;
+}
+.drawer, .modal {
+    @apply shadow-md bg-gray-100;
+}
+.dropdown {
+    @apply shadow transition bg-white border border-gray-300;
+}
+.tooltip-text {
+    @apply shadow transition bg-gray-600 text-gray-200;
 }
 ```
