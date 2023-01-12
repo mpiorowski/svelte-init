@@ -4,7 +4,7 @@
     export let onClose: () => void;
     export let isOpen: boolean;
 
-    $: document.body.classList.toggle('no-scroll', isOpen);
+    $: document && document.body.classList.toggle('no-scroll', isOpen);
 </script>
 
 {#if isOpen}
