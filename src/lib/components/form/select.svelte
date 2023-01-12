@@ -1,6 +1,7 @@
 <script lang="ts">
     export let label: string;
-    export let value: unknown;
+    export let value: unknown = undefined;
+    export let name = '';
     export let error = '';
     export let required = false;
     export let disabled = false;
@@ -9,7 +10,7 @@
 <label>
     {label}
     {#if required}<span class="text-error">*</span>{/if}
-    <select class="input" {disabled} bind:value class:error>
+    <select class="input" {name} {disabled} bind:value class:error>
         <slot />
     </select>
     <p class="text-error">

@@ -1,6 +1,6 @@
 <script lang="ts">
-    export let value: number | null;
     export let label: string;
+    export let value: unknown = undefined;
     export let name = '';
     export let error = '';
     export let required = false;

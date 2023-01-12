@@ -1,6 +1,7 @@
 <script lang="ts">
     export let label: string;
-    export let value: unknown;
+    export let value: unknown = undefined;
+    export let name = '';
     export let error = '';
     export let placeholder = '';
     export let required = false;
@@ -11,7 +12,7 @@
 <label>
     {label}
     {#if required}<span class="text-error">*</span>{/if}
-    <textarea class="input" bind:value {rows} {disabled} {placeholder} class:error />
+    <textarea class="input" {name} bind:value {rows} {disabled} {placeholder} class:error />
     <p class="text-error">
         {#if error}
             {error}

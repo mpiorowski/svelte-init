@@ -1,5 +1,6 @@
 <script lang="ts">
-    export let group: boolean | string | string[];
+    export let group: boolean | string | string[] | undefined = undefined;
+    export let name = '';
     export let values: {
         value: string | boolean;
         label: string;
@@ -10,13 +11,13 @@
 {#each values as value}
     {#if type === 'checkbox'}
         <label class="group">
-            <input bind:group value={value.value} type="checkbox" />
+            <input bind:group {name} value={value.value} type="checkbox" />
             {value.label}
         </label>
     {/if}
     {#if type === 'radio'}
         <label class="group">
-            <input bind:group value={value.value} type="radio" />
+            <input bind:group {name} value={value.value} type="radio" />
             {value.label}
         </label>
     {/if}

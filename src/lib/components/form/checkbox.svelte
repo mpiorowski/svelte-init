@@ -1,10 +1,11 @@
 <script lang="ts">
     export let checked: boolean;
+    export let name = '';
     export let onChange: (() => void) | undefined = undefined;
 </script>
 
 <label>
-    <input bind:checked on:change={onChange} type="checkbox" />
+    <input bind:checked {name} on:change={onChange} type="checkbox" />
     <slot />
 </label>
 
