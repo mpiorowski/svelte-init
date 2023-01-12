@@ -1,10 +1,13 @@
 <script lang="ts">
+    import { browser } from '$app/environment';
     import { fade, fly } from 'svelte/transition';
 
     export let onClose: () => void;
     export let isOpen: boolean;
 
-    $: document && document.body.classList.toggle('no-scroll', isOpen);
+    $: if (browser) {
+        document.body.classList.toggle('no-scroll', isOpen);
+    }
 </script>
 
 {#if isOpen}

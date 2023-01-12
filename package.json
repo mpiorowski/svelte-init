@@ -1,7 +1,7 @@
 {
     "name": "@mpiorowski/svelte-init",
     "description": "Low-overhead Svelte UI library",
-    "version": "2.0.7",
+    "version": "2.0.8",
     "keywords": [
         "svelte",
         "sveltekit",
