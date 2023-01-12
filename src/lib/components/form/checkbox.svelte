@@ -1,5 +1,5 @@
 <script lang="ts">
-    export let checked: boolean;
+    export let checked = false;
     export let name = '';
     export let onChange: (() => void) | undefined = undefined;
 </script>
