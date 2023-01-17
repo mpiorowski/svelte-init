@@ -25,7 +25,6 @@
 -   Working out of the box most useful components, without any additional configuration.
 -   Very easy color / shadow / border config using either pure css or @apply from tailwind.
 -   Written fully in [TypeScript](https://typescriptlang.org/)
--   Using [Tailwind](https://tailwindcss.com) for styling. But can be done with pure css also :).
 -   No dark / light theme included, but can be easly achived using tailwind theme.
 
 ## Components
@@ -51,6 +50,9 @@
 -   [useAccordion](https://github.com/mpiorowski/svelte-init/blob/main/docs/FUNCTIONS.md#useAccordion)
 -   [usePagination](https://github.com/mpiorowski/svelte-init/blob/main/docs/FUNCTIONS.md#usePagination)
 -   [useClickOutside](https://github.com/mpiorowski/svelte-init/blob/main/docs/FUNCTIONS.md#useClickOutside)
+
+## Prerequisite
+  Using [Tailwind preflight](https://tailwindcss.com/docs/preflight) for default styling. Can be done with pure css also :).
 
 ## Instalation
 
