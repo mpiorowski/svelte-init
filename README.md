@@ -16,6 +16,9 @@
 
 </div>
 
+## Contribution
+Any new suggestions, pr, issues are welcome :) Feel free to ask and discuss ;)
+
 ## Demo
 
 [svelte-init.vercel.app](https://svelte-init.vercel.app)
