@@ -13,7 +13,7 @@ import { Button } from "@mpiorowski/svelte-init";
 ```
 
 ```
-<Button type="ghost" loading={true} disabled={false}>Save</Button>
+<Button type="ghost" loading={true} disabled={false} link={true}>Save</Button>
 ```
 
 | Prop     | Values                      | Default   |
@@ -22,5 +22,6 @@ import { Button } from "@mpiorowski/svelte-init";
 | loading  | boolean                     | false     |
 | disabled | boolean                     | false     |
 | form     | string                      | ""        |
+| link     | boolean                     | false     |
 
 If `form` prop is set, the button type is changed to `submit`.
